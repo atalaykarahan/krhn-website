@@ -18,7 +18,6 @@ function App() {
         </ProductsContextProvider>
       </div>
     </Router>
-    // deneme notu
   );
 }
 

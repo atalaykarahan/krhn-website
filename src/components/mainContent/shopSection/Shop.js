@@ -27,6 +27,10 @@ export default class Shop extends Component {
     });
   }
 
+  
+
+ 
+
   render() {
     return (
       <div className="index-section">
@@ -99,9 +103,14 @@ export default class Shop extends Component {
 
                     <div className="variant-input-wrap">
                       <select>
-                        <option className="variant-input">Statik</option>
-                        <option className="variant-input">Dinamik</option>
+                        <option className="variant-input">
+                          Statik
+                        </option>
+                        <option className="variant-input">
+                          Dinamik
+                        </option>
                       </select>
+                      <p>{this.state.value} </p>
                     </div>
                   </div>
 
