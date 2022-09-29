@@ -1,0 +1,853 @@
+@font-face {
+  font-family: "ITC-Avant-Garde-Gothic-LT";
+  src: local("ITC-Avant-Garde-Gothic-LT"),
+    url(./fonts/ITC-Avant-Garde-Gothic-LT.otf) format("opentype");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+}
+:root {
+  --colorKrhnPrimary: #fb6304;
+  --colorKrhnSecondary: #101010;
+  --colorKrhnblack: #000000;
+  --typeHeaderPrimary: "ITC-Avant-Garde-Gothic-LT";
+  --typeHeaderFallback: "sans-serif";
+}
+
+body {
+  background-color: var(--colorKrhnblack) !important;
+  color: #fff !important;
+}
+
+button {
+  background: none !important;
+  border: none !important;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.krhn-icon-hamburger > path,
+.icon path,
+.icon-chevron-down path,
+.icon-close > path {
+  fill: none !important;
+  stroke-width: 4px;
+  stroke: var(--colorKrhnPrimary) !important;
+  stroke-linecap: miter;
+  stroke-linejoin: miter;
+  line-height: 1;
+}
+
+@media only screen and (min-width: 590px) {
+  .navbar .icon {
+    width: 28px !important;
+    height: 28px !important;
+  }
+}
+
+.navbar .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  fill: currentColor;
+}
+
+.navbar {
+  background: var(--colorKrhnSecondary);
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}
+
+.nav-item .icon-chevron-down {
+  margin-left: 5px;
+  width: 10px;
+  height: 10px;
+}
+
+.nav-link {
+  font-family: "ITC-Avant-Garde-Gothic-LT";
+  color: var(--colorKrhnPrimary) !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  text-transform: uppercase;
+}
+
+@media only screen and (min-width: 590px) {
+  /* eğer kayarak kapanmada sıkıntı oluyorsa duration kısımlarını kapat */
+  .offcanvas.show:not(.hiding) {
+    transition-duration: 0.5s;
+    width: 400px !important;
+  }
+
+  .offcanvas-md.offcanvas-start {
+    transition-duration: 0.5s !important;
+  }
+}
+
+.offcanvas.show:not(.hiding) {
+  width: 300px;
+}
+
+.offcanvas {
+  --bs-offcanvas-width: 300px !important;
+  --bs-offcanvas-bg: var(--colorKrhnSecondary) !important;
+}
+
+.offcanvas-md.offcanvas-start {
+  width: 300px;
+}
+
+.offcanvas-md {
+  --bs-offcanvas-width: 300px !important;
+  --bs-offcanvas-bg: var(--colorKrhnSecondary) !important;
+}
+
+.drawer-close-button > .icon {
+  height: 23px;
+  width: 23px;
+}
+
+@media only screen and (min-width: 590px) {
+  .drawer-close-button > .icon {
+    height: 28px;
+    width: 28px;
+  }
+}
+
+.drawer-header {
+  height: 70px;
+  width: 100%;
+  border-bottom: 1px solid;
+  border-bottom-color: var(--colorKrhnPrimary);
+}
+
+@media only screen and (min-width: 590px) {
+  .drawer-header {
+    height: 95px;
+  }
+}
+
+.drawer-close-button {
+  position: relative;
+  right: -20px;
+  height: 100%;
+  padding: 0 15px !important;
+  color: inherit;
+}
+
+.krhn-nav-dropdown {
+  background-color: var(--colorKrhnblack) !important;
+}
+
+.krhn-nav-dropdown-item {
+  color: white !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: var(--colorKrhnPrimary) !important;
+}
+
+/* sepetteki ürünlerin yazılarının tasarım kodları */
+.drawer {
+  color: var(--colorKrhnPrimary);
+}
+
+/* sepet başlığı */
+.drawer-title {
+  font-size: 24px;
+  width: 100%;
+
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 1;
+}
+
+p {
+  font-family: var(--typeBasePrimary), var(--typeBaseFallback);
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  font-size: 16px;
+  /* -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    text-rendering: optimizeSpeed; */
+}
+
+.center-cart {
+  display: flex;
+  align-items: center;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: #101010;
+  background: var(--colorKrhnSecondary);
+}
+
+.hero-550px {
+  height: 357.5px;
+}
+
+@media only screen and (min-width: 590px) {
+  .hero-550px {
+    height: 550px !important;
+  }
+}
+
+@media only screen and (max-width: 589px) {
+  .hero-mobile-250px {
+    height: 250px !important;
+  }
+}
+
+/* 1838 */
+iframe {
+  max-width: 100%;
+}
+
+/* 6740 */
+.hero-media {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/* 6779 */
+.hero-media iframe {
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* 6796 */
+.hero-media iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300%;
+  left: -100%;
+  max-width: none;
+}
+
+/* 6807 */
+@media screen and (min-width: 1140px) {
+  .hero-media iframe {
+    width: 100%;
+    height: 300%;
+    left: auto;
+    top: -100%;
+  }
+}
+
+.card {
+  border: none !important;
+  --bs-card-border-radius: none !important;
+}
+
+.page-width {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: 590px) {
+  .page-width {
+    padding: 0 40px;
+  }
+}
+
+.grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.grid {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0 -30px;
+}
+
+.grid_item {
+  float: left;
+  padding-left: 30px;
+  width: 100%;
+  min-height: 1px;
+}
+
+@media only screen and (max-width: 589px) {
+  .grid_item {
+    padding-left: 22px;
+  }
+}
+
+@media only screen and (max-width: 589px) {
+  .grid {
+    margin-left: -22px;
+  }
+}
+
+@media only screen and (min-width: 590px) {
+  .medium-up-one-half {
+    width: 50%;
+  }
+}
+
+.product_photos {
+  direction: ltr;
+}
+
+img[data-sizes="auto"] {
+  display: block;
+  width: 100%;
+}
+
+/* slick slide main fotonun belli bir ölçeğe göre küçülük büyümesini sağlayan kilit kod. Buna dikkat et */
+.product_photos img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  width: 100%;
+}
+
+/* product_thumb-item kodlarını bu şekilde yazdın */
+.product_thumbs-below .slick-slide {
+  border: 2px solid transparent;
+}
+
+.product_thumbs-below .slick-current {
+  border-color: #fff;
+}
+
+/* Bu kısmı belli bir ekran ölçeğine göre değişecek bir şekilde ayarlayacaksın */
+/* slick slide küçük resimlerin aralarında oluşan boşluğu ayarlayan kod */
+.product_thumbs-below .slick-slide {
+  margin-right: 11px;
+  max-width: 80px !important;
+}
+
+@media only screen and (min-width: 590px) {
+  .product_thumbs-below .slick-slide {
+    margin-right: 20px;
+  }
+}
+
+.product_main-photos {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 auto;
+}
+
+@media only screen and (min-width: 590px) {
+  .product_main-photos {
+    order: 2;
+  }
+}
+
+.product_thumbs {
+  position: relative;
+}
+
+.product_thumbs-below {
+  margin-top: 11px;
+}
+
+@media only screen and (min-width: 590px) {
+  .product_thumbs-below {
+    margin-top: 20px;
+  }
+}
+
+.index-section {
+  margin: 34px 0;
+}
+
+@media only screen and (min-width: 590px) {
+  .index-section {
+    margin: 100px 0;
+  }
+}
+
+.index-section + .index-section {
+  margin-top: 0;
+}
+
+.krhn-h1 {
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 1;
+}
+
+.krhn-h1 {
+  display: block;
+  margin: 0 0 10px;
+}
+
+@media only screen and (min-width: 590px) {
+  .krhn-h1 {
+    margin: 0 0 20px;
+  }
+}
+
+.krhn-h1,
+h1 {
+  font-size: calc(25px * 0.85);
+}
+
+@media only screen and (min-width: 590px) {
+  .krhn-h1,
+  h1 {
+    font-size: 25px;
+  }
+}
+
+.product-single_title {
+  font-size: calc(25px * 0.8);
+  margin-bottom: 6.66667px;
+  word-wrap: break-word;
+}
+
+@media only screen and (min-width: 590px) {
+  .product-single_title {
+    font-size: 25px;
+    margin-bottom: 10px;
+  }
+}
+
+.product_price {
+  font-size: 18px;
+}
+
+@media only screen and (min-width: 590px) {
+  .product_price {
+    font-size: 20px;
+  }
+}
+
+hr {
+  opacity: 1 !important;
+}
+
+.hr-medium hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid;
+  border-top-color: #fff;
+  border-top-color: var(--colorBorder);
+}
+
+.hr-medium {
+  margin: 25px auto;
+}
+
+@media only screen and (min-width: 590px) {
+  .hr-medium {
+    margin: 35px auto;
+  }
+}
+
+label {
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 1;
+}
+
+label {
+  font-size: calc(16px * 0.8);
+}
+
+@media only screen and (min-width: 590px) {
+  label {
+    font-size: calc(16px * 0.88);
+  }
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.variant_label {
+  display: block;
+  margin-bottom: 10px;
+  cursor: default;
+  font-style: normal;
+}
+
+.variant_label {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.variant_label {
+  font-size: calc(16px * 0.75);
+}
+
+@media only screen and (min-width: 590px) {
+  .variant_label {
+    font-size: calc(16px * 0.8);
+  }
+}
+
+.variant-wrapper {
+  margin-bottom: -12px;
+}
+
+.variant-wrapper-dropdown {
+  display: inline-block;
+  max-width: 100%;
+  margin-right: 20px;
+}
+
+.variant-input-wrap {
+  border: 0;
+  padding: 0;
+  margin: 0 0 26.66667px;
+  position: relative;
+}
+
+select {
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeSpeed;
+}
+
+select {
+  border: 1px solid;
+  border-color: #fff;
+  border-color: #fff;
+  max-width: 100%;
+  padding: 8px 10px;
+  border-radius: 0;
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-position: 100%;
+  background-image: url(//cdn.shopify.com/s/files/1/0509/4522/8956/t/9/assets/ico-select.svg);
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-color: transparent;
+  background-size: 11px;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 28px;
+  text-indent: 0.01px;
+  text-overflow: "";
+  cursor: pointer;
+  color: inherit;
+}
+
+select {
+  background-color: transparent;
+  color: inherit;
+}
+
+option {
+  color: #000;
+  background-color: #fff;
+}
+
+.variant-input {
+  display: inline-block;
+}
+
+select .variant-input {
+  display: block;
+}
+
+html:not(.tab-outline) :focus {
+  outline: none;
+}
+
+form {
+  margin: 0;
+}
+
+.product-single_form {
+  margin-bottom: 40px;
+}
+
+button {
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.2;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeSpeed;
+}
+
+button {
+  -webkit-appearance: none;
+}
+
+button {
+  background: none;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
+}
+
+.krhn-btn {
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 1;
+}
+
+.krhn-btn {
+  display: inline-block;
+  padding: 11px 20px;
+  margin: 0;
+  width: auto;
+  min-width: 90px;
+  line-height: 1.42;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  white-space: normal;
+  cursor: pointer;
+  border: 1px solid transparent;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-appearance: none !important;
+  -moz-appearance: none;
+  border-radius: 0;
+  color: var(--colorKrhnSecondary);
+  background: #fff;
+  transition: padding-right 0.3s, background 0.3s, opacity 1s;
+}
+
+@media only screen and (max-width: 589px) {
+  .krhn-btn {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
+.btn-full {
+  width: 100%;
+  padding: 11px 20px;
+  font-size: 16px;
+}
+
+/* Bu kısımda bir css çakışması yaşayabilirsin yaşarsan örnek aldığın kodlara geri dön */
+.add-to-cart {
+  min-height: 50px;
+}
+
+.add-to-cart-secondary {
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  font-weight: 700;
+  letter-spacing: 0em;
+  line-height: 1;
+}
+
+.add-to-cart-secondary {
+  background-color: #000 !important;
+  background-color: var(--colorKrhnblack) !important;
+  border: 1px solid !important;
+  border-color: #fff;
+  color: #fff !important;
+  font-size: 16px;
+  padding: 11px 20px;
+  border-radius: 0;
+}
+
+@media only screen and (max-width: 589px) {
+  .add-to-cart-secondary {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
+/* küçük ekranlarda yandaki scrollbarı kaldırma kodu */
+@media (min-width: 320px) and (max-width: 667px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.product-single_meta {
+  padding-left: 45px;
+}
+
+@media only screen and (max-width: 589px) {
+  .product-single_meta {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+}
+
+.section-header {
+  margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 590px) {
+  .section-header {
+    margin-bottom: 50px;
+  }
+}
+
+.section-header {
+  text-align: center;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+.larger-text p {
+  font-size: 17px;
+}
+
+.larger-text .subtitle {
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  font-weight: 400;
+  letter-spacing: 0em;
+  line-height: 1.2;
+}
+
+.larger-text .subtitle {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.larger-text .subtitle {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.larger-text .subtitle {
+  font-size: calc(16px * 0.85);
+}
+
+@media only screen and (min-width: 590px) {
+  .larger-text .subtitle {
+    font-size: 16px;
+  }
+}
+
+.collection-switcher_trigger:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0%;
+  border-bottom: 2px solid currentColor;
+  transition: none;
+}
+
+.collection-switcher_trigger.is-active:after {
+  width: 100%;
+  transition: width 0.5s ease;
+}
+
+h3 {
+  font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
+  font-weight: 700 !important;
+  letter-spacing: 0em !important;
+  line-height: 1 !important;
+}
+
+/* bu kod çalışmıyorsa sil gitsin */
+h3 {
+  display: block;
+  margin: 0 0 10px;
+}
+
+@media only screen and (min-width: 590px) {
+  h3 {
+    margin: 0 0 20px !important;
+  }
+}
+
+h3 {
+  font-size: calc(25px * 0.85 * 0.85) !important;
+}
+
+@media only screen and (min-width: 590px) {
+  h3 {
+    font-size: calc(25px * 0.85) !important;
+  }
+}
+
+.collection-switcher_title {
+  display: inline-block;
+  margin-bottom: 0 !important;
+}
+
+.text-link,
+a {
+  color: #fff !important;
+  text-decoration: none !important;
+  background: transparent;
+}
+
+.h3 a {
+  text-decoration: none;
+  font-weight: inherit;
+}
+
+.collection-switcher_trigger {
+  position: relative;
+}
+
+.collection-switcher_title + .collection-switcher_title {
+  margin-left: 20px !important;
+}
+
+.collection-switcher_collection-grid .slick-list {
+  padding-top: 15px;
+}
+
+@media only screen and (min-width: 590px) {
+  .collection-switcher_collection-grid .slick-track {
+    padding: 3px 0;
+  }
+}
+
+.krhn_image-mask {
+  position: relative;
+}
+
+.krhn_secondary-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  transition: all 0.7s ease;
+}
+
+.krhn_secondary-image:hover {
+  opacity: 1;
+}
