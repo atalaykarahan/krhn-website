@@ -851,3 +851,137 @@ a {
 .krhn_secondary-image:hover {
   opacity: 1;
 }
+
+
+
+
+
+
+
+
+.index-section-flush {
+  margin: 0;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 590px){
+  .background-media-text {
+      min-height: 550px;
+  }}
+
+
+.background-media-text {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  background: #101010;
+  background: var(--colorLargeImageBg);
+  background-size: cover;
+}
+
+
+
+
+
+
+
+
+.background-media-text_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+@media only screen and (max-width: 589px){
+.background-media-text_container {
+    position: relative;
+    height: 240px;
+}}
+
+
+
+.parallax-container {
+  position: absolute;
+  top: -30%;
+  left: 0;
+  height: 160%;
+  width: 100%;
+}
+
+
+
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity .4s ease;
+}
+
+
+
+
+@keyframes zoom-fade{
+  0%{
+    opacity:0;
+    transform:scale(1.25);
+  }
+  to{
+    opacity:1;
+    transform:scale(1);
+  }
+}
+
+
+.parallax-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+@media only screen and (min-width: 590px){
+.parallax-image {
+    background-attachment: fixed;
+}}
+
+
+
+@media only screen and (min-width: 590px){
+.background-media-text_image{
+    min-height: 550px;
+}}
+
+
+
+
+ .background-media-text_image {
+  background-position: center;
+}
+
+
+
+.background-media-text .lazyloaded{
+  opacity: 0;
+}
+
+.background-media-text .lazyloaded{
+  animation: 2.5s cubic-bezier(.26,.54,.32,1) 0s forwards;
+  animation-name: zoom-fade;
+  transition: none;
+}

@@ -14,9 +14,10 @@ class Products extends Component {
         <div className="page-width">
           {/* burada 2 adet div var bir tanesi gizli olucak ve yukarıdaki dinamik veya statik düğmelerine göre gözükecek */}
 
+          {/* Statik Switcher */}
           <SwitcherPrimary />
 
-          {/* Bu alttaki gizli olan buna sonradan ekleyeceksin */}
+          {/* Dinamik Switcher */}
           <SwitchSecondary />
         </div>
       </div>
