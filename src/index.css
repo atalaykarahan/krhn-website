@@ -589,7 +589,8 @@ form {
   margin-bottom: 40px;
 }
 
-button {
+button,
+p {
   font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
   font-weight: 400;
   letter-spacing: 0em;
@@ -772,7 +773,9 @@ p {
   transition: width 0.5s ease;
 }
 
-h3 {
+h3,
+h2,
+.h3 {
   font-family: var(--typeHeaderPrimary), var(--typeHeaderFallback);
   font-weight: 700 !important;
   letter-spacing: 0em !important;
@@ -786,16 +789,20 @@ h3 {
 }
 
 @media only screen and (min-width: 590px) {
+  .h3,
+  h2,
   h3 {
     margin: 0 0 20px !important;
   }
 }
 
+.h3,
 h3 {
   font-size: calc(25px * 0.85 * 0.85) !important;
 }
 
 @media only screen and (min-width: 590px) {
+  .h3,
   h3 {
     font-size: calc(25px * 0.85) !important;
   }
@@ -852,44 +859,40 @@ a {
   opacity: 1;
 }
 
-
-
-
-
-
-
+/* yeni kodlar burdan sonra başlıyor */
 
 .index-section-flush {
   margin: 0;
 }
-
-
-
-
-
-
-
-@media only screen and (min-width: 590px){
-  .background-media-text {
-      min-height: 550px;
-  }}
-
 
 .background-media-text {
   position: absolute;
   width: 100%;
   overflow: hidden;
   background: #101010;
-  background: var(--colorLargeImageBg);
   background-size: cover;
 }
 
+@media only screen and (max-width: 589px) {
+  .background-media-text,
+  .background-media-text_inner {
+    position: relative !important;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  .background-media-text-graybox {
+    background-image: url(//cdn.shopify.com/s/files/1/0509/4522/8956/files/PHOTO_3x2_About_Niklas_1x1.jpg?v=1653053668);
+  }
+}
 
-
-
-
-
+@media only screen and (min-width: 590px) {
+  .background-media-text-550,
+  .background-media-text-550 .background-media-text_image,
+  .background-media-text_spacer.background-media-text-550 {
+    min-height: 550px;
+  }
+}
 
 .background-media-text_container {
   position: absolute;
@@ -899,14 +902,18 @@ a {
   bottom: 0;
 }
 
-
-@media only screen and (max-width: 589px){
-.background-media-text_container {
+@media only screen and (max-width: 589px) {
+  .background-media-text_container {
     position: relative;
     height: 240px;
-}}
+  }
+}
 
-
+.background-media-text_inner {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
 
 .parallax-container {
   position: absolute;
@@ -916,28 +923,21 @@ a {
   width: 100%;
 }
 
-
-
+@keyframes zoom-fade {
+  0% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 .lazyloaded {
   opacity: 1;
-  transition: opacity .4s ease;
+  transition: opacity 0.4s ease;
 }
-
-
-
-
-@keyframes zoom-fade{
-  0%{
-    opacity:0;
-    transform:scale(1.25);
-  }
-  to{
-    opacity:1;
-    transform:scale(1);
-  }
-}
-
 
 .parallax-image {
   position: absolute;
@@ -950,38 +950,129 @@ a {
   background-repeat: no-repeat;
 }
 
-
-
-
-
-
-@media only screen and (min-width: 590px){
-.parallax-image {
+@media only screen and (min-width: 590px) {
+  .parallax-image {
     background-attachment: fixed;
-}}
+  }
+}
 
-
-
-@media only screen and (min-width: 590px){
-.background-media-text_image{
-    min-height: 550px;
-}}
-
-
-
-
- .background-media-text_image {
+.background-media-text-graybox .background-media-text__image {
   background-position: center;
 }
 
-
-
-.background-media-text .lazyloaded{
+.aos-animate .background-media-text_image.lazyloaded {
   opacity: 0;
 }
 
-.background-media-text .lazyloaded{
-  animation: 2.5s cubic-bezier(.26,.54,.32,1) 0s forwards;
+.aos-animate .background-media-text_image.lazyloaded {
+  animation: 2.5s cubic-bezier(0.26, 0.54, 0.32, 1) 0s forwards;
   animation-name: zoom-fade;
   transition: none;
+}
+
+.background-media-text_aligner {
+  margin: 60px;
+}
+
+@media only screen and (max-width: 589px) {
+  .background-media-text_aligner {
+    margin: -11px -11px 11px;
+  }
+}
+
+.animation-cropper {
+  overflow: hidden;
+  display: inline-flex;
+}
+
+@keyframes rise-up {
+  0% {
+    opacity: 1;
+    transform: translateY(120%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@media only screen and (min-width: 590px) {
+  .background-media-text_inner .animation-contents {
+    opacity: 0;
+  }
+}
+
+@media only screen and (min-width: 590px) {
+  .background-media-text_inner .animation-contents {
+    animation: 1s cubic-bezier(0.26, 0.54, 0.32, 1) 0.5s forwards;
+    animation-name: rise-up;
+  }
+}
+
+.background-media-text_text {
+  text-align: left;
+  background: #000000;
+  padding: 40px;
+  width: 380px;
+}
+
+@media only screen and (max-width: 589px) {
+  .background-media-text_text {
+    padding: 30px;
+    width: auto;
+    margin: 0 20px;
+  }
+}
+
+.h2,
+h2 {
+  font-size: calc(25px * 0.9 * 0.85);
+}
+
+@media only screen and (min-width: 590px) {
+  .h2,
+  h2 {
+    font-size: calc(25px * 0.9);
+  }
+}
+
+.larger-text .h3 {
+  font-size: calc(25px * 0.85);
+}
+
+@media only screen and (min-width: 590px) {
+  .larger-text .h3 {
+    font-size: 25px;
+  }
+}
+
+.rte:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+p {
+  margin: 0 0 20px;
+}
+
+.larger-text p {
+  font-size: 17px;
+}
+
+@media only screen and (min-width: 590px) {
+  .larger-text p {
+    font-size: calc(16px + 2px);
+  }
+}
+
+.rte ol,
+.rte p,
+.rte table,
+.rte ul {
+  margin-bottom: 25px;
+}
+
+.rte > p:last-child {
+  margin-bottom: 0;
 }
