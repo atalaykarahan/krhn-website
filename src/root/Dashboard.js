@@ -6,7 +6,6 @@ import Shop from "../components/mainContent/shopSection/Shop";
 const Dashboard = () => {
   return (
     <main>
-      {/* main content kısmında hiç bir sorun yok buraya sonradan ayar çekersin önceliğin shop olmalı */}
       <MainContent />
       <Shop />
       <Products />

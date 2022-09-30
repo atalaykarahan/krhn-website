@@ -9,14 +9,20 @@ const MainContent = () => {
       <div>
 
         <ReactPlayer className="hero-media" loop={true}  muted={true} width="1280" height="720" playing={true} url="https://www.youtube.com/embed/W_MfNQ9cv9M?controls=0"/>
+        
+        
+        
+        
+        
+        
 
       </div>
 
       {/* <Card.Img src="holder.js/100px270" alt="Card image" /> */}
       <Card.ImgOverlay>
-        <Card.Title>Lorem ipsum</Card.Title>
+        <Card.Title>Lorem Ipsum</Card.Title>
         <Card.Text>
-          Lorem ipsum
+          Lorem Ipsum 
         </Card.Text>
       </Card.ImgOverlay>
 
