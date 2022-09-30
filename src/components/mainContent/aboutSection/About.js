@@ -1,35 +1,11 @@
-import {
-    CardSubtitle,
-    CardBody,
-    Button,
-    Card,
-    CardTitle,
-    CardText,
-  } from "reactstrap";
+import React from 'react'
 
-const About = () => {
-    return ( <>
-    
-    
-    <Card>
-          <CardBody>
-            <CardTitle tag="h5">Card title</CardTitle>
-            <CardSubtitle className="mb-2 text-muted" tag="h6">
-              Card subtitle
-            </CardSubtitle>
-            <CardText>
-              This card has supporting text below as a natural lead-in to
-              additional content.
-            </CardText>
-            <Button>Button</Button>
-          </CardBody>
-        </Card>
-    
-    
-    
-    
-    
-    </> );
+export default function About() {
+  return (
+    <div className='index-section'>
+
+    <p>burası about kısmı olucak</p>
+
+    </div>
+  )
 }
- 
-export default About;

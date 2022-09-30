@@ -5,8 +5,6 @@ export const ProductsContext = createContext();
 class ProductsContextProvider extends Component {
   state = {
     collectionStatus: "statik",
-    showStatik: { option1: "", option2: "none" },
-    showDinamik: { option1: "none", option2: "" },
   };
 
   collectionDinamik = (e) => {
