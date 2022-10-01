@@ -1078,8 +1078,13 @@ p {
 }
 
 .list-group-item {
-  background-color: transparent!important;
-  border: none!important;
-  padding: 0!important;
-  }
+  background-color: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
 
+.footer-link {
+  /* font-family: "ITC-Avant-Garde-Gothic-LT"; */
+  color: var(--colorKrhnPrimary);
+  /* font-size: 15px !important; */
+}

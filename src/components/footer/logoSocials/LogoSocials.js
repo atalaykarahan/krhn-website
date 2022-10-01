@@ -1,5 +1,5 @@
 import React from "react";
-import LogoPng from "../../images/logoBrand.png";
+import LogoPng from "../../../images/logoBrand.png";
 import { SocialIcon } from "react-social-icons";
 
 export default function LogoSocials() {

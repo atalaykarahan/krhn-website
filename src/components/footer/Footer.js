@@ -1,6 +1,6 @@
 import React from "react";
-import LogoSocials from "./LogoSocials";
-import MenuLegals from "./MenuLegals";
+import LogoSocials from "./logoSocials/LogoSocials";
+import MenuLegals from "./menuLegals/MenuLegals";
 
 export default function Footer() {
   return (
@@ -12,20 +12,18 @@ export default function Footer() {
       >
         {/*  links */}
         <section>
-
           <div className="container mt-5">
             {/* Grid Row */}
-            
+
             <div className="row d-flex flex-wrap-reverse">
-              {/* Logo and social Media section  */}
+              {/* Logo  social  */}
               <LogoSocials />
-              {/* Logo and social Media section-end  */}
+              {/* Logo  social end  */}
 
-              {/* Menu and legal pages */}
+              {/* Menu  legal  */}
               <MenuLegals />
-              {/* menu and legal pages end */}
+              {/* menu  legal  end */}
             </div>
-
 
             {/* Grid Row-end */}
           </div>
