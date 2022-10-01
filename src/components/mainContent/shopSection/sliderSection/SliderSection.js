@@ -1,16 +1,15 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import bigP0 from "./shopImages/bigP0.jpg";
-import bigP1 from "./shopImages/bigP1.jpg";
-import bigP2 from "./shopImages/bigP2.jpg";
-import bigP3 from "./shopImages/bigP3.jpg";
-import smallP0 from "./shopImages/smallP0.jpg";
-import smallP1 from "./shopImages/smallP1.jpg";
-import smallP2 from "./shopImages/smallP2.jpg";
-import smallP3 from "./shopImages/smallP3.jpg";
+import bigP0 from "../shopImages/bigP0.jpg";
+import bigP1 from "../shopImages/bigP1.jpg";
+import bigP2 from "../shopImages/bigP2.jpg";
+import bigP3 from "../shopImages/bigP3.jpg";
+import smallP0 from "../shopImages/smallP0.jpg";
+import smallP1 from "../shopImages/smallP1.jpg";
+import smallP2 from "../shopImages/smallP2.jpg";
+import smallP3 from "../shopImages/smallP3.jpg";
 
 export default class SliderSection extends Component {
-  
   constructor(props) {
     super(props);
     this.state = {

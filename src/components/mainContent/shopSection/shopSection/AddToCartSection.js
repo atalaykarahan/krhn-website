@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import FormSection from "./FormSection";
-
 import MoreInformation from "./MoreInformation";
+
 export default function AddToCartSection() {
   const [upSelected, setUpSelected] = useState();
 

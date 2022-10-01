@@ -1084,7 +1084,5 @@ p {
 }
 
 .footer-link {
-  /* font-family: "ITC-Avant-Garde-Gothic-LT"; */
-  color: var(--colorKrhnPrimary);
-  /* font-size: 15px !important; */
+  color: var(--colorKrhnPrimary) !important;
 }
