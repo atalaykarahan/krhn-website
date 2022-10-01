@@ -1,152 +1,114 @@
 import React from "react";
+import LogoPng from "../../images/logoBrand.png";
+import { SocialIcon } from "react-social-icons";
 
 export default function Footer() {
   return (
     <>
       {/* <!-- Footer --> */}
       <footer
-        className="text-center text-lg-start text-white"
+        className="text-lg-start text-white pt-5"
         style={{ backgroundColor: "#101010" }}
       >
-
-
-        
         {/* <!-- Section: Links  --> */}
         <section>
-          <div className="container text-center text-md-start mt-5">
+          <div className="container text-md-start mt-5">
             {/* <!-- Grid row --> */}
-            <div className="row mt-3">
-
-
-
-
-              {/* <!-- Logo geleceği yer  --> */}
-              <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-
-
-
-                {/* <!-- Content --> */}
-                <h6 className="text-uppercase fw-bold">Company name</h6>
-                <hr
-                  className="mb-4 mt-0 d-inline-block mx-auto"
-                  style={{
-                    width: "60px",
-                    backgroundColor: "#7c4dff",
-                    height: "2px",
-                  }}
-                />
-                <p>
-                  Here you can use rows and columns to organize your footer
-                  content. Lorem ipsum dolor sit amet, consectetur adipisicing
-                  elit.
-                </p>
-              </div>
-
-              {/* <!-- Logo geleceği yer --> */}
-
-
-
-
-
-
-
-
-              {/* <!-- Grid column --> */}
+            <div className="row align-items-center">
+              {/* <!-- Logo section  --> */}
               <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* <!-- Links --> */}
-                <h6 className="text-uppercase fw-bold">Products</h6>
-                <hr
-                  className="mb-4 mt-0 d-inline-block mx-auto"
-                  style={{
-                    width: "60px",
-                    backgroundColor: "#7c4dff",
-                    height: "2px",
-                  }}
-                />
-                <p>
-                  <a href="#!" className="text-white">
-                    MDBootstrap
+                {/* Logo Image */}
+                <div>
+                  <a href="/">
+                    <img alt="logo" src={LogoPng} className="img-fluid" />
                   </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-white">
-                    MDWordPress
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-white">
-                    BrandFlow
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-white">
-                    Bootstrap Angular
-                  </a>
-                </p>
-              </div>
-              {/* <!-- Grid column --> */}
+                </div>
+                {/* Logo Image */}
 
-              {/* <!-- Grid column --> */}
-              <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                {/* <!-- Links --> */}
-                <h6 className="text-uppercase fw-bold">Useful links</h6>
-                <hr
-                  class="mb-4 mt-0 d-inline-block mx-auto"
-                  style={{
-                    width: "60px",
-                    backgroundColor: "#7c4dff",
-                    height: "2px",
-                  }}
-                />
-                <p>
-                  <a href="#!" className="text-white">
-                    Your Account
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-white">
-                    Become an Affiliate
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-white">
-                    Shipping Rates
-                  </a>
-                </p>
-                <p>
-                  <a href="#!" className="text-white">
-                    Help
-                  </a>
-                </p>
+                {/* Social Media Icons */}
+                <div className=" d-flex justify-content-center">
+                  <SocialIcon
+                    url="https://www.youtube.com/channel/UCAcHYaoAcxU5H39NrIGq-sQ"
+                    bgColor="transparent"
+                    fgColor="#fb6304"
+                  />
+                  <SocialIcon
+                    url="https://www.instagram.com/krhnatalay/"
+                    bgColor="transparent"
+                    fgColor="#fb6304"
+                  />
+                </div>
+                {/* Social Media Icons */}
               </div>
-              {/* <!-- Grid column --> */}
+              {/* <!-- Logo section --> */}
 
-              {/* <!-- Grid column --> */}
-              <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                {/* <!-- Links --> */}
-                <h6 className="text-uppercase fw-bold">Contact</h6>
-                <hr
-                  className="mb-4 mt-0 d-inline-block mx-auto"
-                  style={{
-                    width: "60px",
-                    backgroundColor: "#7c4dff",
-                    height: "2px",
-                  }}
-                />
-                <p>
-                  <i className="fas fa-home mr-3"></i> New York, NY 10012, US
-                </p>
-                <p>
-                  <i className="fas fa-envelope mr-3"></i> info@example.com
-                </p>
-                <p>
-                  <i className="fas fa-phone mr-3"></i> + 01 234 567 88
-                </p>
-                <p>
-                  <i className="fas fa-print mr-3"></i> + 01 234 567 89
-                </p>
+              <div className="">
+                {/* <!-- Menu Section --> */}
+                <div className="col-md-2 col-lg-2 col-xl-5 mx-auto mb-4">
+                  {/* <!-- Links --> */}
+                  <h6 className="text-uppercase fw-bold">Menu</h6>
+                  <hr
+                    className="mb-4 mt-0 d-inline-block mx-auto"
+                    style={{
+                      width: "60px",
+                      backgroundColor: "#7c4dff",
+                      height: "2px",
+                    }}
+                  />
+                  <p>
+                    <a href="#!" className="text-white">
+                      Statik
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#!" className="text-white">
+                      Dinamik
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#!" className="text-white">
+                      Sss
+                    </a>
+                  </p>
+                </div>
+                {/* <!-- Menu Section --> */}
+
+                {/* <!-- Yasal sayfalar kısmı --> */}
+                <div className="col-md-3 col-lg-2 col-xl-5 mx-auto mb-4">
+                  {/* <!-- Links --> */}
+                  <h6 className="text-uppercase fw-bold">Yasal Sayfalar</h6>
+                  <hr
+                    class="mb-4 mt-0 d-inline-block mx-auto"
+                    style={{
+                      width: "60px",
+                      backgroundColor: "#7c4dff",
+                      height: "2px",
+                    }}
+                  />
+                  <p>
+                    <a href="#!" className="text-white">
+                      Yasal Uyarı
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#!" className="text-white">
+                      Gizlilik Politikası
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#!" className="text-white">
+                      Kullanım Şartları
+                    </a>
+                  </p>
+                  <p>
+                    <a href="#!" className="text-white">
+                      Çerez Politikası
+                    </a>
+                  </p>
+                </div>
+
+                {/* <!-- Yasal sayfalar kısmı --> */}
               </div>
-              {/* <!-- Grid column --> */}
             </div>
             {/* <!-- Grid row --> */}
           </div>
@@ -154,20 +116,10 @@ export default function Footer() {
         {/* <!-- Section: Links  --> */}
 
         {/* <!-- Copyright --> */}
-        <div
-          className="text-center p-3"
-          style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
-        >
-          © 2022 Copyright:
-          <a className="text-white" href="https://mdbootstrap.com/">
-            MDBootstrap.com
-          </a>
-        </div>
+        <div className="text-center p-3">© 2022 Karahan Website</div>
         {/* <!-- Copyright --> */}
       </footer>
       {/* <!-- Footer --> */}
-
-      
     </>
   );
 }
