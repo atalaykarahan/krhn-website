@@ -1,79 +1,56 @@
-import React, { Component } from "react";
-import Slider from "react-slick";
+import React, { useState } from "react";
 import bigP0 from "../shopImages/bigP0.jpg";
 import bigP1 from "../shopImages/bigP1.jpg";
 import bigP2 from "../shopImages/bigP2.jpg";
 import bigP3 from "../shopImages/bigP3.jpg";
-import smallP0 from "../shopImages/smallP0.jpg";
-import smallP1 from "../shopImages/smallP1.jpg";
-import smallP2 from "../shopImages/smallP2.jpg";
-import smallP3 from "../shopImages/smallP3.jpg";
+import { Swiper, SwiperSlide } from "swiper/react";
 
-export default class SliderSection extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      nav1: null,
-      nav2: null,
-    };
-  }
+import "swiper/css";
+import "swiper/css/free-mode";
+import "swiper/css/navigation";
+import "swiper/css/thumbs";
 
-  componentDidMount() {
-    this.setState({
-      nav1: this.slider1,
-      nav2: this.slider2,
-    });
-  }
-  render() {
-    return (
-      <div className="medium-up-one-half grid_item">
-        <div className="product_photos">
-          {/* Üst Slider başlangıç */}
+import { FreeMode, Navigation, Thumbs } from "swiper";
 
-          <div className="product_main-photos">
-            <Slider
-              infinite={false}
-              asNavFor={this.state.nav2}
-              ref={(slider) => (this.slider1 = slider)}
-              adaptiveHeight={true}
-            >
-              <div>
-                <img src={bigP0} alt="index resim" />
-              </div>
-              <div>
-                <img src={bigP1} alt="index resim" />
-              </div>
-              <div>
-                <img src={bigP2} alt="index resim" />
-              </div>
-              <div>
-                <img src={bigP3} alt="index resim" />
-              </div>
-            </Slider>
-          </div>
+export default function SliderSection() {
+  const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
-          {/* Alt slider başlangıç */}
-          <div className="product_thumbs product_thumbs-below">
-            <Slider
-              asNavFor={this.state.nav1}
-              ref={(slider) => (this.slider2 = slider)}
-              slidesToShow={3}
-              swipeToSlide={true}
-              focusOnSelect={true}
-              infinite={false}
-              adaptiveHeight={true}
-            >
-              <img src={smallP0} alt="index resim" />
+  let mySliderImage = [bigP0, bigP1, bigP2, bigP3];
 
-              <img src={smallP1} alt="index resim" />
-
-              <img src={smallP2} alt="index resim" />
-
-              <img src={smallP3} alt="index resim" />
-            </Slider>
-          </div>
-        </div>
-      </div>
-    );
-  }
+  return (
+    <div className="medium-up-one-half grid_item">
+      <Swiper
+        style={{
+          "--swiper-navigation-color": "#fff",
+          "--swiper-pagination-color": "#fff",
+        }}
+        spaceBetween={10}
+        navigation={true}
+        thumbs={{ swiper: thumbsSwiper }}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper2 mb-2"
+      >
+        {mySliderImage.map((slider) => (
+          <SwiperSlide key={slider}>
+            <img alt="slider" src={slider} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      <Swiper
+        onSwiper={setThumbsSwiper}
+        spaceBetween={10}
+        slidesPerView={4}
+        freeMode={true}
+        watchSlidesProgress={true}
+        modules={[FreeMode, Navigation, Thumbs]}
+        className="mySwiper"
+      >
+        {mySliderImage.map((slider) => (
+          <SwiperSlide key={slider}>
+            <img alt="bottomSlider" src={slider} />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
+  );
 }

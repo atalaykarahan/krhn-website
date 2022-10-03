@@ -6,7 +6,8 @@ import "./fonts/ITC-Avant-Garde-Gothic-LT.otf"
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  // stric mode swiper konusunda sıkıntı çıkardığı için sildin duruma göre tekrar eklersin
+  // <React.StrictMode>
     <App />
-  </React.StrictMode>
+  // </React.StrictMode>
 );

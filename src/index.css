@@ -305,69 +305,9 @@ iframe {
   }
 }
 
-.product_photos {
-  direction: ltr;
-}
-
 img[data-sizes="auto"] {
   display: block;
   width: 100%;
-}
-
-/* slick slide main fotonun belli bir ölçeğe göre küçülük büyümesini sağlayan kilit kod. Buna dikkat et */
-.product_photos img {
-  display: block;
-  margin: 0 auto;
-  max-width: 100%;
-  width: 100%;
-}
-
-/* product_thumb-item kodlarını bu şekilde yazdın */
-.product_thumbs-below .slick-slide {
-  border: 2px solid transparent;
-}
-
-.product_thumbs-below .slick-current {
-  border-color: #fff;
-}
-
-/* Bu kısmı belli bir ekran ölçeğine göre değişecek bir şekilde ayarlayacaksın */
-/* slick slide küçük resimlerin aralarında oluşan boşluğu ayarlayan kod */
-.product_thumbs-below .slick-slide {
-  margin-right: 11px;
-  max-width: 80px !important;
-}
-
-@media only screen and (min-width: 590px) {
-  .product_thumbs-below .slick-slide {
-    margin-right: 20px;
-  }
-}
-
-.product_main-photos {
-  position: relative;
-  overflow: hidden;
-  flex: 1 1 auto;
-}
-
-@media only screen and (min-width: 590px) {
-  .product_main-photos {
-    order: 2;
-  }
-}
-
-.product_thumbs {
-  position: relative;
-}
-
-.product_thumbs-below {
-  margin-top: 11px;
-}
-
-@media only screen and (min-width: 590px) {
-  .product_thumbs-below {
-    margin-top: 20px;
-  }
 }
 
 .index-section {
@@ -833,16 +773,6 @@ a {
   margin-left: 20px !important;
 }
 
-.collection-switcher_collection-grid .slick-list {
-  padding-top: 15px;
-}
-
-@media only screen and (min-width: 590px) {
-  .collection-switcher_collection-grid .slick-track {
-    padding: 3px 0;
-  }
-}
-
 .krhn_image-mask {
   position: relative;
 }
@@ -1085,4 +1015,78 @@ p {
 
 .footer-link {
   color: var(--colorKrhnPrimary) !important;
+}
+
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.mySwiper2 {
+  height: 80%;
+  width: 100%;
+}
+
+.mySwiper {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.mySwiper .swiper-slide {
+  width: 25%;
+  height: 100%;
+  opacity: 0.4;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
