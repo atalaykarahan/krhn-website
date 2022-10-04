@@ -19,6 +19,7 @@ export default function SliderSection() {
 
   return (
     <div className="medium-up-one-half grid_item">
+      {/* ********** üst slider ********** */}
       <Swiper
         style={{
           "--swiper-navigation-color": "#fff",
@@ -36,6 +37,8 @@ export default function SliderSection() {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* ********** alt slider ********** */}
       <Swiper
         onSwiper={setThumbsSwiper}
         spaceBetween={10}

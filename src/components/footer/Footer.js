@@ -7,7 +7,7 @@ export default function Footer() {
     <>
       {/*  Footer */}
       <footer
-        className="text-lg-start text-white pt-5"
+        className="text-lg-start pt-5"
         style={{ backgroundColor: "#101010" }}
       >
         {/*  links */}
@@ -31,7 +31,9 @@ export default function Footer() {
         {/*  links-end  */}
 
         {/* Copyright*/}
-        <div className="text-center p-3">© 2022 Karahan Website</div>
+        <div className="text-center p-3 footer-link">
+          © 2022 Karahan Website
+        </div>
         {/*  Copyright-end */}
       </footer>
       {/*  Footer-end */}
