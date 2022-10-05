@@ -856,9 +856,58 @@ p {
   object-fit: cover;
 }
 
-/* ********** parallax about ********** */
+/*********** parallax about ***********/
 
 .index-section-flush {
   margin: 0;
 }
 
+.parallax-container {
+  height: 550px;
+}
+
+.parallax-container img {
+  min-height: 550px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .parallax-container {
+    background-image: url(//cdn.shopify.com/s/files/1/0509/4522/8956/files/PHOTO_3x2_About_Niklas_1x1.jpg?v=1653053668);
+  }
+}
+
+@media only screen and (min-width: 720px) {
+  .parallax-container img {
+    width: auto !important;
+  }
+}
+
+@media only screen and (max-width: 589px) {
+  .parallax-container img {
+    /* position: relative !important; */
+    height: 240px !important;
+  }
+}
+
+@media only screen and (min-width: 1550px) {
+  .react-parallax-bgimage {
+    top: -20% !important;
+  }
+}
+
+/* ********** parallax text section */
+.black-card {
+  text-align: left;
+  background: #000000;
+  padding: 40px;
+  width: 380px;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 590px) {
+  .black-card {
+    padding: 30px;
+    width: auto;
+    margin: 320px 20px;
+  }
+}
