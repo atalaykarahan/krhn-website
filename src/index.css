@@ -40,13 +40,13 @@ button {
 @media only screen and (min-width: 590px) {
   .navbar .icon {
     width: 28px !important;
-    height: 28px !important;
+    height: 90px !important;
   }
 }
 
 .navbar .icon {
   width: 30px;
-  height: 30px;
+  height: 50px;
 }
 
 .icon {
@@ -59,6 +59,7 @@ button {
 
 .navbar {
   background: var(--colorKrhnSecondary);
+  height: 120px;
 }
 
 .dropdown-toggle::after {

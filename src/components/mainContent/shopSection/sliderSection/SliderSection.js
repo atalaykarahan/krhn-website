@@ -18,7 +18,7 @@ export default function SliderSection() {
   let mySliderImage = [bigP0, bigP1, bigP2, bigP3];
 
   return (
-    <div className="medium-up-one-half grid_item">
+    <div className=" grid_item">
       {/* ********** üst slider ********** */}
       <Swiper
         style={{

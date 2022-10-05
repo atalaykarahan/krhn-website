@@ -31,7 +31,7 @@ export default function SwitcherPrimary() {
 
                 <div>Statik Site</div>
                 <div>
-                  <span>1499₺</span>
+                  <span>1000 ₺</span>
                 </div>
               </a>
             </div>
@@ -49,9 +49,9 @@ export default function SwitcherPrimary() {
                   ></img>
                 </div>
 
-                <div>Dinamik Site</div>
+                <div>Statik Site</div>
                 <div>
-                  <span>4799₺</span>
+                  <span>1499 ₺</span>
                 </div>
               </a>
             </div>

@@ -1,5 +1,4 @@
 import SliderSection from "./sliderSection/SliderSection";
-import AddToCartSection from "./shopSection/AddToCartSection";
 import React, { Component } from "react";
 
 export default class ShopMain extends Component {
@@ -11,10 +10,6 @@ export default class ShopMain extends Component {
             {/* Slider başlangıç */}
 
             <SliderSection />
-
-            {/* Sepete ekleme kısmı */}
-
-            <AddToCartSection />
           </div>
         </div>
       </div>

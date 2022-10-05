@@ -29,9 +29,9 @@ export default function SwitchSecondary() {
                   ></img>
                 </div>
 
-                <div>Statik Site</div>
+                <div>Dinamik Site</div>
                 <div>
-                  <span>1499₺</span>
+                  <span>1499 ₺</span>
                 </div>
               </a>
             </div>
@@ -51,7 +51,7 @@ export default function SwitchSecondary() {
 
                 <div>Dinamik Site</div>
                 <div>
-                  <span>4799₺</span>
+                  <span>4799 ₺</span>
                 </div>
               </a>
             </div>

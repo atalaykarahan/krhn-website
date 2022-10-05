@@ -8,7 +8,7 @@ export default function About() {
       <Parallax
         bgImage={bigPlaceholder}
         className="parallax-container"
-        strength={-150}
+        strength={-200}
       >
         <div className="black-card">
           <p>Hakkında</p>
