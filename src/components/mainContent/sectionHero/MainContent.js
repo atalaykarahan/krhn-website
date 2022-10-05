@@ -1,36 +1,35 @@
 import ReactPlayer from "react-player";
 import React from "react";
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
 const MainContent = () => {
   return (
     <>
       <Card className="text-white hero-550px hero hero-mobile-250px">
+        <div>
+          <ReactPlayer
+            className="hero-media"
+            loop={true}
+            muted={true}
+            width="1280"
+            height="720"
+            playing={true}
+            url="https://www.youtube.com/embed/W_MfNQ9cv9M?controls=0"
+          />
+        </div>
 
-      <div>
-
-        <ReactPlayer className="hero-media" loop={true}  muted={true} width="1280" height="720" playing={true} url="https://www.youtube.com/embed/W_MfNQ9cv9M?controls=0"/>
-        
-        
-        
-        
-        
-        
-
-      </div>
-
-      {/* <Card.Img src="holder.js/100px270" alt="Card image" /> */}
-      <Card.ImgOverlay>
-        <Card.Title>Lorem Ipsum</Card.Title>
-        <Card.Text>
-          Lorem Ipsum 
-        </Card.Text>
-      </Card.ImgOverlay>
-
-
-
-
-
-    </Card>
+        {/* <Card.Img src="holder.js/100px270" alt="Card image" /> */}
+        <Card.ImgOverlay className="row align-items-center">
+          <div>
+            <Card.Title className="nav-link hero_title d-flex justify-content-center ">
+              <h1>LOOK PRO. SAVE TIME.</h1>
+            </Card.Title>
+            <Card.Text className="hero_subtitle  d-flex justify-content-center text-uppercase text-center">
+              My editing assets help you level up your content while simplifying
+              your workflow.
+            </Card.Text>
+          </div>
+        </Card.ImgOverlay>
+      </Card>
     </>
   );
 };
