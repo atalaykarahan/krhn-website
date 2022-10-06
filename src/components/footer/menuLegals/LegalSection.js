@@ -3,7 +3,7 @@ import React from "react";
 export default function LegalSection() {
   return (
     <>
-      <h6 className="nav-link">Yasal Sayfalar</h6>
+      <h6 className="nav-link">Gizlilik ve Güvenlik</h6>
       <ul className="list-group">
         <li className="list-group-item">
           <a href="#!" className="footer-link">

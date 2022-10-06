@@ -6,6 +6,7 @@ import Button from "react-bootstrap/Button";
 import Dropdown from "react-bootstrap/Dropdown";
 import NavItem from "react-bootstrap/NavItem";
 import NavLink from "react-bootstrap/NavLink";
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
   const [show, setShow] = useState(false);
@@ -63,11 +64,24 @@ const Navigation = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="krhn-nav-dropdown">
-                <NavDropdown.Item href="#action3" className="krhn-nav-dropdown-item">Menü</NavDropdown.Item>
-                <NavDropdown.Item href="#action4" className="krhn-nav-dropdown-item">Porföy</NavDropdown.Item>
-                <NavDropdown.Item href="#action5" className="krhn-nav-dropdown-item">Diğer...</NavDropdown.Item>
-              </Dropdown.Menu>
+                <NavDropdown.Item className="krhn-nav-dropdown-item">
+                  <Link to="statik/menu/" style={{ display: "block" }}>
+                    Menü
+                  </Link>
+                </NavDropdown.Item>
 
+                <NavDropdown.Item className="krhn-nav-dropdown-item">
+                  <Link to="statik/portfoy/" style={{ display: "block" }}>
+                    Porföy
+                  </Link>
+                </NavDropdown.Item>
+
+                <NavDropdown.Item className="krhn-nav-dropdown-item">
+                  <Link to="statik/others/" style={{ display: "block" }}>
+                    Diğer...
+                  </Link>
+                </NavDropdown.Item>
+              </Dropdown.Menu>
             </Dropdown>
 
             <Dropdown as={NavItem} id={`offcanvasNavbarDropdown-expand-md`}>
@@ -89,12 +103,31 @@ const Navigation = () => {
               </Dropdown.Toggle>
 
               <Dropdown.Menu className="krhn-nav-dropdown">
-                <NavDropdown.Item href="#action3" className="krhn-nav-dropdown-item">Menü</NavDropdown.Item>
-                <NavDropdown.Item href="#action3" className="krhn-nav-dropdown-item">Portföy</NavDropdown.Item>
-                <NavDropdown.Item href="#action3" className="krhn-nav-dropdown-item">E-ticaret</NavDropdown.Item>
-                <NavDropdown.Item href="#action3" className="krhn-nav-dropdown-item">Diğer...</NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#action3"
+                  className="krhn-nav-dropdown-item"
+                >
+                  Menü
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#action3"
+                  className="krhn-nav-dropdown-item"
+                >
+                  Portföy
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#action3"
+                  className="krhn-nav-dropdown-item"
+                >
+                  E-ticaret
+                </NavDropdown.Item>
+                <NavDropdown.Item
+                  href="#action3"
+                  className="krhn-nav-dropdown-item"
+                >
+                  Diğer...
+                </NavDropdown.Item>
               </Dropdown.Menu>
-
             </Dropdown>
 
             <div>

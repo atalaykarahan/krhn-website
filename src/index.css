@@ -948,3 +948,15 @@ p {
     font-size: calc(16px * 1.18) !important;
   }
 }
+
+/* --------- brand center ----------- */
+
+.krhn-brand_center {
+  padding-right: 17rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .krhn-brand_center {
+    padding-right: 3.5rem;
+  }
+}
