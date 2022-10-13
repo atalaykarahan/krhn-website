@@ -19,6 +19,9 @@ export default function StatikTemplate() {
         </div>
       </div>
 
+      {/* !Bu bir deneme notu */}
+
+
       {/* ----------- ilk Section ----------- */}
       <div className="d-flex justify-content-center mt-5">
         <div className="row g-0 krhn-template_section">
@@ -48,6 +51,7 @@ export default function StatikTemplate() {
           </div>
         </div>
       </div>
+
 
       {/* ---------------- 2. section ---------- resim ile yazıyı tersine konumlandır. */}
 
