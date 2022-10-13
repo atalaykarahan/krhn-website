@@ -771,10 +771,6 @@ h2 {
   }
 }
 
-p {
-  margin: 0 0 20px;
-}
-
 .list-group-item {
   background-color: transparent !important;
   border: none !important;
@@ -958,5 +954,38 @@ p {
 @media only screen and (max-width: 767px) {
   .krhn-brand_center {
     padding-right: 3.5rem;
+  }
+}
+
+/* ----------- template kodları ----------- */
+
+/* explain-text bu sınıfı türkçe karakter uyumlu bir font ile eşleştir */
+
+.krhn-template_container {
+  margin: 4rem;
+}
+
+.krhn-template_header {
+  font-weight: bold;
+}
+
+.krhn-header_inner {
+  width: 45rem;
+}
+
+/* ----section 1  */
+.krhn-template_section {
+  width: 70rem;
+}
+
+.krhn-template_tside {
+  padding-top: 2rem;
+  min-width: 321px;
+}
+
+/* ------- telefon kısmı için template kodları ----- */
+@media only screen and (max-width: 590px) {
+  .krhn-template_container {
+    margin: 2rem;
   }
 }

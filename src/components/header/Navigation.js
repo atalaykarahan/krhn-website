@@ -65,7 +65,7 @@ const Navigation = () => {
 
               <Dropdown.Menu className="krhn-nav-dropdown">
                 <NavDropdown.Item className="krhn-nav-dropdown-item">
-                  <Link to="statik/menu/" style={{ display: "block" }}>
+                  <Link to="statik/template/" style={{ display: "block" }}>
                     Menü
                   </Link>
                 </NavDropdown.Item>
