@@ -5,12 +5,37 @@
   /* other formats include: 'woff2', 'truetype, 'opentype',
                             'embedded-opentype', and 'svg' */
 }
+
+@font-face {
+  font-family: "Roboto-Black";
+  src: local("Roboto-Black"), url(./fonts/Roboto-Black.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: local("Roboto-Bold"), url(./fonts/Roboto-Bold.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  src: local("Roboto-Light"), url(./fonts/Roboto-Light.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: local("Roboto-Medium"), url(./fonts/Roboto-Medium.ttf) format("truetype");
+}
 :root {
   --colorKrhnPrimary: #fb6304;
   --colorKrhnSecondary: #101010;
   --colorKrhnblack: #000000;
   --typeHeaderPrimary: "ITC-Avant-Garde-Gothic-LT";
   --typeHeaderFallback: "sans-serif";
+
+  --templateHeader: "Roboto-Black";
+  --templateExplainPrimary: "Roboto-Bold";
+  --templateExplainSecondary: "Roboto-Light";
+  --templateSummary: "Roboto-Medium";
 }
 
 body {
@@ -959,14 +984,29 @@ h2 {
 
 /* ----------- template kodları ----------- */
 
-/* explain-text bu sınıfı türkçe karakter uyumlu bir font ile eşleştir */
-
 .krhn-template_container {
   margin: 4rem;
 }
 
 .krhn-template_header {
   font-weight: bold;
+  font-family: var(--templateHeader);
+}
+
+.header-explain {
+  font-family: var(--templateExplainPrimary);
+}
+
+.template-section-summary {
+  font-family: var(--templateSummary);
+}
+.template-section_header {
+  font-family: var(--templateExplainPrimary);
+}
+
+.template-section_text {
+  font-family: var(--templateExplainSecondary);
+  font-weight: 800;
 }
 
 .krhn-header_inner {

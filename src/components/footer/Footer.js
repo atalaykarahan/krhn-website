@@ -16,13 +16,9 @@ export default function Footer() {
             {/* Grid Row */}
 
             <div className="row d-flex flex-wrap-reverse">
-              {/* Logo  social  */}
               <LogoSocials />
-              {/* Logo  social end  */}
 
-              {/* Menu  legal  */}
               <MenuLegals />
-              {/* menu  legal  end */}
             </div>
 
             {/* Grid Row-end */}
