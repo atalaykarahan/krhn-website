@@ -53,6 +53,10 @@ export default function StatikTemplate() {
       </div>
 
 
+        
+
+
+
       {/* ---------------- 2. section ---------- resim ile yazıyı tersine konumlandır. */}
 
       {/* şimdilik display none ile kapattım gelince açarsın */}
