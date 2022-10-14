@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function SectionPrimary() {
+export default function SectionPrimary(props) {
   return (
     <div className="d-flex justify-content-center mt-5">
       <div className="row g-0 krhn-template_section">
@@ -8,16 +8,11 @@ export default function SectionPrimary() {
         <div className="col krhn-template_tside">
           <div>
             <p className="template-section-summary">
-              Akılda kalıcı küçük özet bir yazı
+              {props.sections.topHeader}
             </p>
           </div>
-          <h3 className="template-section_header">Mini bir başlık</h3>
-          <p className="template-section_text">
-            Web siteleri dinamik ve statik olarak ikiye ayrılmaktadır. Alt
-            yapısı, sunucu ilişkileri, kullanıcı etkileşimi, yönetici panel
-            imkanları ve güncelleme yetenekleri bir web sitesinin dinamik ya da
-            statik durumunu belirler.
-          </p>
+          <h3 className="template-section_header">{props.sections.header}</h3>
+          <p className="template-section_text">{props.sections.text}</p>
         </div>
 
         {/* --- Sağ kısım  */}
