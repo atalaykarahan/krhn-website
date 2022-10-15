@@ -48,6 +48,23 @@ export default function MenuStatik() {
   return (
     <div>
       <StatikTemplate {...props} />
+
+      {/* Bonus Section */}
+      <div className="d-flex justify-content-center my-5">
+        <div className="g-0 krhn-template_section">
+          <div className="krhn-template_tside mx-5">
+            <div>
+              <p className="template-section-summary">Bonus</p>
+            </div>
+            <h3 className="template-section_header">Bedava QR kod</h3>
+            <p className="template-section_text">
+              Sitenizin yanında size özel QR kod hediyemizdir. Bunu bir sticker
+              haline getirip istediğiniz yere yapıştırabilir veya masalarınıza
+              metal baskı halinde koyabilirsiniz.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
