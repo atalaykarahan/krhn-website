@@ -17,13 +17,16 @@ export default function StatikTemplate(props) {
       </div>
 
       {/* ---- Sections ---- */}
-      {props.sections[0] ? (
-        <SectionPrimary sections={props.sections[0]} />
-      ) : null}
 
-      {props.sections[1] ? (
-        <SectionSecondary sections={props.sections[1]} />
-      ) : null}
+      {props.sections
+        ? props.sections.map((sectionPart, index) =>
+            index % 2 === 0 ? (
+              <SectionPrimary key={index} sections={sectionPart} />
+            ) : (
+              <SectionSecondary key={index} sections={sectionPart} />
+            )
+          )
+        : null}
     </div>
   );
 }
