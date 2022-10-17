@@ -52,7 +52,7 @@ export default function OthersStatik() {
       {/* Bonus Section */}
       <div className="d-flex justify-content-center my-5">
         <div className="g-0 krhn-template_section">
-          <div className="krhn-template_tside mx-5">
+          <div className="krhn-template_tside px-5">
             <div>
               <p className="template-section-summary">
                 Halen daha aradığımı bulamadım
