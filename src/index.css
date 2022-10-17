@@ -802,8 +802,15 @@ h2 {
   padding: 0 !important;
 }
 
+/* ---- some footer code --- */
+
 .footer-link {
   color: var(--colorKrhnPrimary) !important;
+}
+
+.footer-menu_header {
+  color: white;
+  pointer-events: none;
 }
 
 .swiper {

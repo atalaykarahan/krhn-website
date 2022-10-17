@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function MenuSection() {
   return (
@@ -9,21 +10,21 @@ export default function MenuSection() {
         <div className="col-md-4 ">
           <ul className="list-group ">
             <li className="list-group-item mb-2">
-              STATİK
+              <span className="footer-menu_header">STATİK</span>
               <li className="list-group-item">
-                <a href="/" className="footer-link">
+                <Link to="statik/menu" className="footer-link">
                   Menü
-                </a>
+                </Link>
               </li>
               <li className="list-group-item">
-                <a href="/" className="footer-link">
+                <Link to="statik/portfoy" className="footer-link">
                   Portföy
-                </a>
+                </Link>
               </li>
               <li className="list-group-item">
-                <a href="/" className="footer-link">
+                <Link to="statik/others" className="footer-link">
                   Diğer...
-                </a>
+                </Link>
               </li>
             </li>
           </ul>
@@ -33,7 +34,7 @@ export default function MenuSection() {
         <div className="col-md-4 ">
           <ul className="list-group">
             <li className="list-group-item mb-2">
-              DİNAMİK
+              <span className="footer-menu_header">DİNAMİK</span>
               <li className="list-group-item">
                 <a href="/" className="footer-link">
                   Menü
@@ -50,9 +51,9 @@ export default function MenuSection() {
                 </a>
               </li>
               <li className="list-group-item">
-                <a href="/" className="footer-link">
+                <Link to="statik/others" className="footer-link">
                   Diğer...
-                </a>
+                </Link>
               </li>
             </li>
           </ul>

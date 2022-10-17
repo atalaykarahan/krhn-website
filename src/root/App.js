@@ -8,12 +8,15 @@ import PortfoyStatik from "../components/pages/statik/portfoy/PortfoyStatik";
 import Footer from "../components/footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductsContextProvider from "../context/ProductsContext";
+import ScroolToTop from "./ScroolToTop";
 
 import "swiper/css/bundle";
 
 function App() {
   return (
     <Router>
+      <ScroolToTop />
+
       <div className="App">
         <Header />
         <ProductsContextProvider>
@@ -24,6 +27,7 @@ function App() {
             <Route path="statik/others/" element={<OthersStatik />} />
           </Routes>
         </ProductsContextProvider>
+
         <Footer />
       </div>
     </Router>

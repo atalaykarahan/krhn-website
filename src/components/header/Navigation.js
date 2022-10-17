@@ -121,11 +121,10 @@ const Navigation = () => {
                 >
                   E-ticaret
                 </NavDropdown.Item>
-                <NavDropdown.Item
-                  href="#action3"
-                  className="krhn-nav-dropdown-item"
-                >
-                  Diğer...
+                <NavDropdown.Item className="krhn-nav-dropdown-item">
+                  <Link to="statik/others/" style={{ display: "block" }}>
+                    Diğer...
+                  </Link>
                 </NavDropdown.Item>
               </Dropdown.Menu>
             </Dropdown>

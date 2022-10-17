@@ -23,7 +23,7 @@ export default function SectionSecondary(props) {
               {props.sections.topHeader}
             </p>
           </div>
-          <h3 className="template-section_header">{props.sections.header}</h3>
+          <h3 className="template-section_header text-uppercase">{props.sections.header}</h3>
           <p className="template-section_text">{props.sections.text}</p>
         </div>
       </div>
