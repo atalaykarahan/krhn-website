@@ -104,10 +104,11 @@ const Navigation = () => {
 
               <Dropdown.Menu className="krhn-nav-dropdown">
                 <NavDropdown.Item
-                  href="#action3"
                   className="krhn-nav-dropdown-item"
                 >
+                  <Link to="dinamik/menu" style={{ display: "block" }}>
                   Menü
+                  </Link>
                 </NavDropdown.Item>
                 <NavDropdown.Item
                   href="#action3"
