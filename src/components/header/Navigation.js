@@ -98,7 +98,7 @@ const Navigation = () => {
             <div>
               <Nav.Link>
                 <Link
-                  to="statik/others/"
+                  to="sss"
                   onClick={handleClose}
                   style={{ display: "block" }}
                 >

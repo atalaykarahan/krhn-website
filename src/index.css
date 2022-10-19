@@ -1036,3 +1036,48 @@ h2 {
     margin: 2rem;
   }
 }
+
+/* ========= SSS sections kodları  ========= */
+
+#accordion {
+  margin: 100px auto;
+  padding-left: 0;
+  max-width: 900px;
+}
+
+#accordion li {
+  list-style: none;
+  width: 100%;
+  margin-bottom: 20px;
+  background: var(--colorKrhnSecondary);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+#accordion li img {
+  padding: 10px;
+  display: inline;
+  align-items: start;
+  max-height: 80px;
+  background-color: none !important;
+}
+
+#accordion li label {
+  padding: 10px;
+  cursor: pointer;
+  /* ========= buraya sonradan renk ekleyebilirsin ========= */
+}
+
+#accordion li label h2 {
+  margin-bottom: 0 !important;
+}
+
+#accordion li svg {
+  height: 10px;
+  color: var(--colorKrhnPrimary);
+  /* padding-right: 20px; */
+}
+
+#accordion label + input[type="radio"] {
+  /* display: none; */
+}

@@ -9,6 +9,8 @@ import Footer from "../components/footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductsContextProvider from "../context/ProductsContext";
 import ScroolToTop from "./ScroolToTop";
+import Sss from "../components/pages/sss/Sss";
+
 
 
 import "swiper/css/bundle";
@@ -26,6 +28,7 @@ function App() {
             <Route path="statik/menu/" element={<MenuStatik />} />
             <Route path="statik/portfoy/" element={<PortfoyStatik />} />
             <Route path="statik/others/" element={<OthersStatik />} />
+            <Route path="sss" element={<Sss />} />
           </Routes>
         </ProductsContextProvider>
 
