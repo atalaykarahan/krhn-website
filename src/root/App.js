@@ -9,7 +9,6 @@ import Footer from "../components/footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ProductsContextProvider from "../context/ProductsContext";
 import ScroolToTop from "./ScroolToTop";
-import MenuDinamik from "../components/pages/dinamik/menu/MenuDinamik";
 
 
 import "swiper/css/bundle";
@@ -27,7 +26,6 @@ function App() {
             <Route path="statik/menu/" element={<MenuStatik />} />
             <Route path="statik/portfoy/" element={<PortfoyStatik />} />
             <Route path="statik/others/" element={<OthersStatik />} />
-            <Route path="dinamik/menu" element={<MenuDinamik />} />
           </Routes>
         </ProductsContextProvider>
 

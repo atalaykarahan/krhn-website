@@ -26,7 +26,7 @@ const Navigation = () => {
         <Offcanvas.Header>
           <div className=" d-flex p-2 drawer-header justify-content-between ">
             <div>
-              <Offcanvas.Title></Offcanvas.Title>
+              <Offcanvas.Title />
             </div>
 
             <div className="d-flex justify-content-end">
@@ -47,7 +47,7 @@ const Navigation = () => {
           <Nav className=" flex-grow-1 pe-3">
             <Dropdown as={NavItem} id={`offcanvasNavbarDropdown-expand-md`}>
               <Dropdown.Toggle as={NavLink}>
-                Statik
+                Statik | Dinamik
                 <svg
                   focusable="false"
                   viewBox="0 0 28 16"
@@ -65,65 +65,30 @@ const Navigation = () => {
 
               <Dropdown.Menu className="krhn-nav-dropdown">
                 <NavDropdown.Item className="krhn-nav-dropdown-item">
-                  <Link to="statik/menu/" style={{ display: "block" }}>
+                  <Link
+                    to="statik/menu/"
+                    onClick={handleClose}
+                    style={{ display: "block" }}
+                  >
                     Menü
                   </Link>
                 </NavDropdown.Item>
-
                 <NavDropdown.Item className="krhn-nav-dropdown-item">
-                  <Link to="statik/portfoy/" style={{ display: "block" }}>
+                  <Link
+                    to="statik/portfoy/"
+                    onClick={handleClose}
+                    style={{ display: "block" }}
+                  >
                     Portföy
                   </Link>
                 </NavDropdown.Item>
 
                 <NavDropdown.Item className="krhn-nav-dropdown-item">
-                  <Link to="statik/others/" style={{ display: "block" }}>
-                    Diğer...
-                  </Link>
-                </NavDropdown.Item>
-              </Dropdown.Menu>
-            </Dropdown>
-
-            <Dropdown as={NavItem} id={`offcanvasNavbarDropdown-expand-md`}>
-              <Dropdown.Toggle as={NavLink}>
-                Dinamik
-                <svg
-                  focusable="false"
-                  viewBox="0 0 28 16"
-                  className="icon-chevron-down"
-                >
-                  <path
-                    d="M1.57 1.59l12.76 12.77L27.1 1.59"
-                    strokeWidth="2"
-                    stroke="#000"
-                    fill="none"
-                    fillRule="evenodd"
-                  />
-                </svg>
-              </Dropdown.Toggle>
-
-              <Dropdown.Menu className="krhn-nav-dropdown">
-                <NavDropdown.Item
-                  className="krhn-nav-dropdown-item"
-                >
-                  <Link to="dinamik/menu" style={{ display: "block" }}>
-                  Menü
-                  </Link>
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  href="#action3"
-                  className="krhn-nav-dropdown-item"
-                >
-                  Portföy
-                </NavDropdown.Item>
-                <NavDropdown.Item
-                  href="#action3"
-                  className="krhn-nav-dropdown-item"
-                >
-                  E-ticaret
-                </NavDropdown.Item>
-                <NavDropdown.Item className="krhn-nav-dropdown-item">
-                  <Link to="statik/others/" style={{ display: "block" }}>
+                  <Link
+                    to="statik/others/"
+                    onClick={handleClose}
+                    style={{ display: "block" }}
+                  >
                     Diğer...
                   </Link>
                 </NavDropdown.Item>
@@ -131,8 +96,14 @@ const Navigation = () => {
             </Dropdown>
 
             <div>
-              <Nav.Link className="nav-item" href="#action1">
-                Sss
+              <Nav.Link>
+                <Link
+                  to="statik/others/"
+                  onClick={handleClose}
+                  style={{ display: "block" }}
+                >
+                  <span style={{ color: "var(--colorKrhnPrimary)" }}>Sss</span>
+                </Link>
               </Nav.Link>
             </div>
           </Nav>
