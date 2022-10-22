@@ -1037,33 +1037,84 @@ h2 {
   }
 }
 
-/* ========= SSS sections kodları  ========= */
+/* ========= SSS SECTİONS KODLARI  ========= */
 
-.accordion-header{
-  margin-bottom: 0;
+/* hazır kodlarla gelen arrow kısmı  */
+.accordion-button:not(.collapsed)::after {
+  display: none;
 }
+/* hazır kodlarla gelen arrow kısmı end  */
 
-.krhn-accordion{
+/* kutuların genişlik ve büyüklük ayarları*/
+.accordion-header {
+  margin-bottom: 0 !important;
+}
+.krhn-accordion {
   margin: 100px auto;
   max-width: 50rem;
 }
-
-.krhn-accordion .accordion-item{
+.krhn-accordion .accordion-item {
   width: 100%;
   margin-bottom: 10px;
   background: var(--colorKrhnSecondary);
   padding: 10px;
-  border-radius: 4px!important;
+  border-radius: 4px !important;
+}
+/*kutuların genişlik ve büyüklük ayarları end */
+
+/* buton dışı h2 */
+.krhn-accordion .accordion-item .accordion-header {
+  justify-content: center;
+  display: flex;
+}
+/* buton dışı h2  end */
+
+/* yazıları ortalamak için */
+.krhn-accordion .accordion-header button[type="button"] {
+  position: relative;
+  display: inline;
+  align-items: center;
 }
 
-.krhn-accordion .accordion-item img{
-  max-width: 12%!important;
-  height: auto;
-  margin-right: 10px;
+.krhn-accordion .accordion-header button[type="button"] h2 {
+  text-align: center;
+  margin: 0 !important;
+}
+/* yazıları ortalamak için end */
+
+/* krhn arrow kısmı --  */
+.krhn-accordion .accordion-item div .icon-chevron-down {
+  width: 15px;
+  height: 15px;
+  /* yumuşak kapanması için */
+  rotate: 0deg;
+  transition: 0.5s;
 }
 
-.krhn-accordion .container-item_header h2{
-  margin-left: 2rem;
-  margin-bottom: 0;
-  font-family: var(--templateSummary);
+/*  arrow kapsayan div etiketi  */
+.krhn-accordion .accordion-item div[id="krhn-arrow"] {
+  display: flex;
+  position: relative;
+  justify-content: flex-end;
+  margin-right: 0.5rem;
+  z-index: 1;
+  bottom: 20px;
+}
+/*  arrow kapsayan div etiketi end */
+
+/*  krhn arrow kısmı end   */
+
+/* başlığı arrow ile çakışmasına engel olmak için */
+.krhn-baslik_ortala {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 0;
+  top: 10px;
+  padding-right: 25px;
+}
+/* başlığı arrow ile çakışmasına engel olmak için end */
+
+.krhn-accordion button[aria-expanded="true"] div[id="krhn-arrow"] svg {
+  rotate: -180deg;
 }
