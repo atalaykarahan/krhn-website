@@ -11,7 +11,7 @@ export default function LogoSocials() {
           <img alt="logo" src={LogoPng} className="img-fluid" />
         </a>
       </div>
-      {/* Logo Image */}
+      {/* Logo Image  */}
 
       {/* Social Media Icons */}
       <div className="col col-md-12 d-flex justify-content-md-center justify-content-end ">
