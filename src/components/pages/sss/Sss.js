@@ -1,5 +1,6 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
+import ContactMe from "../../contactMe/ContactMe";
 
 export default function Sss() {
   const SssText = [
@@ -60,10 +61,14 @@ export default function Sss() {
               </div>
             </Accordion.Header>
 
-            <Accordion.Body>{subject.text}</Accordion.Body>
+            <Accordion.Body className="pt-3" style={{color: "gray"}}>
+              {subject.text}
+            </Accordion.Body>
           </Accordion.Item>
         ))}
       </Accordion>
+
+      <ContactMe/>
     </div>
   );
 }

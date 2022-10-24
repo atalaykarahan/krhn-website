@@ -1097,7 +1097,7 @@ h2 {
   position: relative;
   justify-content: flex-end;
   margin-right: 0.5rem;
-  z-index: 1;
+  z-index: 1; 
   bottom: 20px;
 }
 /*  arrow kapsayan div etiketi end */
@@ -1112,9 +1112,21 @@ h2 {
   z-index: 0;
   top: 10px;
   padding-right: 25px;
+  
 }
 /* başlığı arrow ile çakışmasına engel olmak için end */
+
+/* Başlık yazısının font ayarlaması */
+.krhn-baslik_ortala h2{
+  font-family: var(--templateHeader)!important ;
+  font-size: 24px;
+  font-weight: 100!important;
+}
+/* Başlık yazısının font ayarlaması end */
+
 
 .krhn-accordion button[aria-expanded="true"] div[id="krhn-arrow"] svg {
   rotate: -180deg;
 }
+
+/* ========= SSS SECTİONS KODLARI end  ========= */
