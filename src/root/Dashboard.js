@@ -1,3 +1,4 @@
+import ContactMe from "../components/contactMe/ContactMe";
 import About from "../components/mainContent/aboutSection/About";
 import Products from "../components/mainContent/productsSection/Products";
 import MainContent from "../components/mainContent/sectionHero/MainContent";
@@ -10,6 +11,7 @@ const Dashboard = () => {
       <ShopMain />
       <Products />
       <About />
+      <ContactMe/>
     </main>
   );
 };

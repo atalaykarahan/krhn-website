@@ -1130,3 +1130,41 @@ h2 {
 }
 
 /* ========= SSS SECTİONS KODLARI end  ========= */
+
+
+/* ========= CONTACT ME  ========= */
+
+
+.krhn-contact_me{
+  background: var(--colorKrhnSecondary);
+  padding: 10px;
+  border-radius: 14px;
+  max-width: 42rem;
+  margin: 100px auto;
+  transition: 0.5s;
+}
+
+.krhn-contact_me:hover{
+  background: var(--colorKrhnblack);
+}
+
+.krhn-contact_me .krhn-contact_link{
+  font-family: var(--templateHeader);
+  color: #fff!important;
+  transition: 0.5s;
+}
+
+.krhn-contact_me .krhn-contact_link:hover{
+  color:var(--colorKrhnPrimary)!important;
+}
+
+
+
+
+
+
+
+
+
+
+/* ========= CONTACT ME end  ========= */

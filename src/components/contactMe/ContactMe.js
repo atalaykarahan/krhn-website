@@ -2,12 +2,13 @@ import React from "react";
 
 export default function ContactMe() {
   return (
-    <div>
+    <div className="krhn-contact_me">
       {/* Ana paragraf başlangıç kısmı */}
-      <p>İletişime geçmek için alttaki linke tıklayabilirsiniz</p>
-
-      {/* Link kısmı */}
-      <a href="https://bionluk.com/atalaykrhn">burdan</a>
+      <h3 className="text-center m-0 ">
+        <a className="krhn-contact_link" href="https://bionluk.com/atalaykrhn">
+          HERHANGİ BİR SORU VEYA SATIN ALIMLAR İÇİN TIKLA
+        </a>
+      </h3>
     </div>
   );
 }
