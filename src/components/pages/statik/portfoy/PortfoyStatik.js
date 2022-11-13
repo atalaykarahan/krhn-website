@@ -15,37 +15,37 @@ export default function PortfoyStatik() {
       {
         topHeader: "Porfolyo sitemi neye göre yaptırmalıyım",
         header: "Belli başlı istediğim özellikler var",
-        text: "Dilerseniz şablon veya kafanızda bir plan varsa istediğinize göre hazırlayabiliriz. Bunun için hoşunuza giden örnek portfolyo site tasarımları, renk paletleri gibi şeyleri bizle paylaşmanız yeterli.",
+        text: "Dilerseniz şablon veya kafanızda bir plan varsa isteğinize göre hazırlayabiliriz. Bunun için hoşunuza giden örnek portfolyo site tasarımları, renk paletleri gibi şeyleri bizle paylaşmanız yeterli.",
       },
       {
-        topHeader: "Çok fazla içerik var hangisini koymalıyım",
+        topHeader: "Çok fazla içeriğim var hangisini koymalıyım",
         header: "Karar veremiyorum",
         text: "Portfolyo sitenizin en önemli bölümünü geçmiş çalışmalarınız oluşturur. Bundan dolayı çeşitli beceri ve projelerinizi koymalısınız yalnız en iyi çalışmalarınızı eklemeye özen gösterin.",
       },
       {
         topHeader: "Porfolyo sitesi gerekli mi",
         header: "Gerçekten buna ihtiyacım var mı",
-        text: "Portfolyolar sayesinde yaratıcı çalışmalar profesyonelce sergilenebilir. İnsanlar tam olarak kim olduğunuzu ve neler başarabileceğinizi gösterebilmeniz için son derece önemlidir.",
+        text: "Portfolyolar sayesinde yaratıcı çalışmalar profesyonelce sergilenebilir. İnsanlara tam olarak kim olduğunuzu ve neler başarabileceğinizi gösterebilmeniz için son derece önemlidir.",
       },
       {
         topHeader: "Değişmeyen tek şey değişimin kendisi",
         header: "Portfolyomu nasıl güncellerim",
-        text: "Bunun için 2 seçeneğiniz var ya dinamik bir site almışsınızdır ve telefondan bile halledebilirsiniz. ya da Statik bir site almışsınızdır ve bilgisayar ile kaynak kodlarını düzenlemeniz gerekmektedir.",
+        text: "Bunun için 2 seçeneğiniz var, ya dinamik bir site almışsınızdır ve telefondan bile halledebilirsiniz. ya da Statik bir site almışsınızdır ve bilgisayar yardımıyla kaynak kodlarını düzenlemeniz gerekmektedir.",
       },
       {
         topHeader: "Kaynak mı o da ne?",
         header: "Kaynak kodu nedir?",
-        text: "Ben kaynak kodundan anlamam bunun daha basit bir yolu yok mu? diye düşünüyorsanız merak etmeyin statik site alanlara kaynak kodunda nasıl düzenleme yapılacağını elimden geldiğince göstermeye çalışıcam",
+        text: "Ben kaynak kodundan anlamam bunun daha basit bir yolu yok mu? diye düşünüyorsanız merak etmeyin statik site alanlara kaynak kodunda nasıl düzenleme yapılacağını göstericem.",
       },
       {
         topHeader: "Kaynak kodu ile uğraşmak istemiyorum",
         header: "Bunun daha basit bir yolu olmalı.",
-        text: "Tüm bunlara rağmen “bilgisayar ile uğraşmak istemiyorum” diyorsanız size tavsiyem sitenizi dinamik olarak almanız.",
+        text: "“bilgisayar ile uğraşmak istemiyorum” diyorsanız size tavsiyem sitenizi dinamik olarak almanız.",
       },
       {
         topHeader: "Dinamik sayfa mı?",
         header: "Dinamik sayfa",
-        text: "Temel olarak dinamik sayfa kaynak koduna müdahale gerekmeksizin sizin sonradan istediğiniz istekleri yerine getirebilecek bir düzeydedir. Daha fazla bilgi için Dinamik sayfalardaki örneklere bakabilirsiniz.",
+        text: "Temel olarak dinamik sayfa kaynak koduna müdahale gerekmeksizin sizin sonradan istediğiniz istekleri yerine getirebilecek bir düzeydedir. Sadece sizin giriş yapabileceğiniz özel bir admin panel sayfası ile içeriklerinizi güncelleyebileceksiniz.",
       },
     ],
   };
