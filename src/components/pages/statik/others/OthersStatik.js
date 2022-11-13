@@ -5,7 +5,7 @@ export default function OthersStatik() {
   const props = {
     header: "BEN BAŞKA BİR SİTE BAKMIŞTIM",
     headerUnderText:
-      "Yaptırmak istediğiniz siteyi diğer seçeneklerde bulamıyor ve kafanız karıştıysa merak etmeyin. Kafanızdaki site işletme, Etkinlik, Online Forum, Kişisel, Üyelik… gibi aklınıza ne geliyorsa tam olarak istediğiniz siteyi bize açıklayarak aktarırsanız yapamıyacağımız bir şey değildir.",
+      "Yaptırmak istediğiniz siteyi diğer seçeneklerde bulamıyorsanız merak etmeyin. Kafanızdaki site; İşletme, Etkinlik, Online Forum, Kişisel, Üyelik… gibi aklınıza ne geliyorsa tam olarak istediğiniz siteyi bize açıklayarak aktarırsanız yapamıyacağımız bir şey değildir.",
     sections: [
       {
         topHeader: "İşletmem için değer",
@@ -18,7 +18,7 @@ export default function OthersStatik() {
         text: "21. yüzyılda etkinlik siteleri de son derece popüler hale geldi. Bu siteler, etkinliğiniz hakkında ayrıntılı bilgiler paylaşmanıza olanak tanır ve kapsamlı programlar, ulaşım önerileri, haritalar ve çok daha fazlasını içerir.",
       },
       {
-        topHeader: "Kafam çok karıştı buna oy vericem",
+        topHeader: "Topluluk forum siteleri",
         header: "Forum",
         text: "Kullanıcılarınızın çeşitli konular üzerinde tartışmasını, sorular sormasını ve birbirleriyle etkileşim kurmasını sağlamak. Giderek daha fazla sayıda web sitesi, site üyelerinin birbirleriyle konuşmasını sağlamak ve kullanıcıları sitelerinde sohbete teşvik etmek için online bir forum içermeye başladı. Dipnot: forumlar dinamik sitelerdir.",
       },
