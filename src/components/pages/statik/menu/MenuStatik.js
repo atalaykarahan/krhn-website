@@ -13,9 +13,9 @@ export default function MenuStatik() {
         text: "Cafe web sitesi, restorant web sitesi, bar web sitesi, pub web sitesi derken aslında hemen hemen hepsi aynı alt yapı ve aynı mantıkla çalışan web siteleri kullanıyor.",
       },
       {
-        topHeader: "Sitemi neye göre seçmeliyim",
+        topHeader: "Statik mi Dinamik mi",
         header: "Hangisi bana uygun",
-        text: "Aralarındaki fark sadece görünüş ve dinamik mi yoksa statik mi olmasından kaynaklanıyor. Peki ama dinamik veya statik nedir?",
+        text: "Aralarındaki fark sadece admin paneli olmasından kaynaklanıyor. Peki ama dinamik veya statik nedir?",
       },
       {
         topHeader: "Sil baştan menü yap ya da..",
@@ -25,17 +25,12 @@ export default function MenuStatik() {
       {
         topHeader: "Acilen fiyat güncellemeliyim",
         header: "Yeni Fiyatları daha kolay yazın",
-        text: "Bunun daha kolay bir yolu olarak. Fiyat listenizi bir internet sitesinde tutup dilerseniz saat sabaha karşı 04:30 olsa bile bilgisayar yardımıyla sitenizin kaynak kodlarını düzenleyip fiyatlarınızı güncelleyebilirsiniz.",
+        text: "Bunun daha kolay bir yolu olarak. Fiyat listenizi bir internet sitesinde tutup dilediğiniz saat bilgisayar yardımıyla sitenizin kaynak kodlarını düzenleyip fiyatlarınızı güncelleyebilirsiniz.",
       },
       {
         topHeader: "Kaynak mı o da ne?",
         header: "Kaynak kodu nedir?",
-        text: "Ben kaynak kodundan anlamam bunun daha basit bir yolu yok mu? diye düşünüyorsanız merak etmeyin statik site alanlara kaynak kodunda nasıl düzenleme yapıcalağını elimden geldiğince göstemreye çalışıcam",
-      },
-      {
-        topHeader: "Porfolyo sitesi nasıl adlandırılır",
-        header: "Siteme ne isim versem",
-        text: "Bu oldukça kişisel bir seçenek. Bazı kişiler kendi isimlerini seçerken, bazılarıysa daha kolay hatırlanan bir isim için farklı isimler veya kısaltmalar tercih eder.",
+        text: "Ben kaynak kodundan anlamam bunun daha basit bir yolu yok mu? diye düşünüyorsanız merak etmeyin statik site satın alanlara kaynak kodunda nasıl düzenleme yapılacağını sitenizi kurduktan hemen sonra göstericem.",
       },
       {
         topHeader: "Kaynak kodu ile uğraşmak istemiyorum",

@@ -20,12 +20,11 @@ const MainContent = () => {
         {/* <Card.Img src="holder.js/100px270" alt="Card image" /> */}
         <Card.ImgOverlay className="row align-items-center">
           <div>
-            <Card.Title className="nav-link hero_title d-flex justify-content-center ">
-              <h1>LOOK PRO. SAVE TIME.</h1>
+            <Card.Title className="text-center krhn-main_header-text hero_title d-flex justify-content-center ">
+              <h1>PROFESYONEL GÖRÜN. SATIŞLARINI ARTTIR.</h1>
             </Card.Title>
             <Card.Text className="hero_subtitle  d-flex justify-content-center text-uppercase text-center">
-              My editing assets help you level up your content while simplifying
-              your workflow.
+            KİŞİSEL ÇALIŞMAM SİTENİZE DAHA FAZLA ZİYARETÇİ VE GELİŞMİŞ ÖZELLİKLER SAĞLAR
             </Card.Text>
           </div>
         </Card.ImgOverlay>

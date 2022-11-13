@@ -937,7 +937,7 @@ h2 {
   .black-card {
     padding: 30px;
     width: auto;
-    margin: 320px 20px;
+    margin: 280px 20px;
   }
 }
 
@@ -1168,3 +1168,15 @@ h2 {
 
 
 /* ========= CONTACT ME end  ========= */
+
+/* ========= MAİN CONTENT SECTİON HERO ========= */
+
+.krhn-main_header-text{
+  font-family: var(--templateHeader);
+  color: var(--colorKrhnPrimary) !important;
+  font-weight: 700 !important;
+  font-size: 18px !important;
+  text-transform: uppercase;
+}
+
+/* ========= MAİN CONTENT SECTİON HERO end ========= */

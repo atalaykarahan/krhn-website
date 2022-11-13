@@ -14,9 +14,9 @@ export default function About() {
           <p>Hakkında</p>
           <h2>Atalay</h2>
           <div>
-            As a life-long creator I know how challenging the editing process
-            can be. That's why I decided to build tools which help you level up
-            your work while saving time along the way.
+            Bilgisayar programcısı olarak bir web sayfası yapmanın ne kadar
+            karmaşık ve zor bir durum olabileceğinin farkındayım. Bundan dolay kafanızı karıştırmadan hayalinizdeki
+            siteyi hızlıca size ulaştırmak hedefim.
           </div>
         </div>
       </Parallax>
