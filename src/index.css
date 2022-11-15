@@ -1139,7 +1139,7 @@ h2 {
   background: var(--colorKrhnSecondary);
   padding: 10px;
   border-radius: 14px;
-  max-width: 42rem;
+  max-width: 20rem;
   margin: 100px auto;
   transition: 0.5s;
 }

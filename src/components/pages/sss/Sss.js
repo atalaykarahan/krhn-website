@@ -7,17 +7,48 @@ export default function Sss() {
     {
       key: 0,
       header: "Fiyatlar neye göre belirlenmekte",
-      text: "Web tasarım fiyatları; İşlenecek olan içerik, sayfa sayısı, Yazılacak olan web site yazılımı web site içinde kaç dil olacağı SSL olup olmama durumu ve çeşitli özel formlara göre fiyatlandırılmaktadır.",
+      text: "Web tasarım fiyatları; İşlenecek olan içerik, sayfa sayısı, Yazılacak olan web site yazılımı SSL olup olmama durumu ve çeşitli özel formlara göre fiyatlandırılmaktadır.",
     },
     {
       key: 1,
       header: "Web hosting ve domain seçimini siz mi yapıyorsunuz",
-      text: "Evet. Sizin yerinize web hosting ve domain seçimi yaparak gerekli tescil işlemlerini gerçekleştirebiliyoruz. Aylık ve birkaç yıllık şekilde yapılabilmektedir. Zamanı geldiğinde gerekli uzatma işlemlerini sizin yerinize de gerçekleştirebilmekteyiz.",
+      text: "Hayır ama isterseniz sizin yerinize web hosting ve domain seçimi yaparak gerekli tescil işlemlerini gerçekleştirebiliyoruz. Aylık ve birkaç yıllık şekilde yapılabilmektedir. Zamanı geldiğinde gerekli uzatma işlemlerini sizin yerinize de gerçekleştirebilmekteyiz.",
     },
     {
       key: 2,
       header: "Web sitemi kendim yönetebilir miyim",
-      text: "Yaptığımı projeler için içeriğe uygun olarak bir yönetim paneli oluşturmaktayız. Bu yönetim paneli yardımıyla web site üzerinde gerekli değişiklikleri yapabilirsiniz. Yönetim paneline giriş yaparak bize ihtiyaç duymadan yeni güncellemeler yapmanız mümkündür. Eğer bu tip güncelleme işlemlerini bizim takip etmemizi istiyorsanız tüm bunları sizin yerinize biz yapıyoruz.",
+      text: "Yaptığımız siteler için içeriğe uygun olarak bir yönetim paneli oluşturmaktayız. Bu yönetim paneli yardımıyla web site üzerinde gerekli değişiklikleri yapabilirsiniz. Yönetim paneline giriş yaparak bize ihtiyaç duymadan yeni güncellemeler yapmanız mümkündür. Eğer bu tip güncelleme işlemlerini bizim takip etmemizi istiyorsanız tüm bunları sizin yerinize yaptığımız bir pakedimiz mevcut.",
+    },
+    {
+      key: 3,
+      header: "Neden Karahan Websites alt yapısını kullanmalıyım?",
+      text: "Özellikle küçük ve orta büyüklükte'ki işletmeler için bütçe dostu seçenekler sağlamaktayız.",
+    },
+    {
+      key: 4,
+      header: "Karahan Websites alt yapısına geçmek için neye ihtiyacım var?",
+      text: 'Karahan Websites altyapısına geçmek istiyorsanız. firamanızın ihtiyaclarına ve hedeflerine en uygun site alt yapısı hakkında bilgi sahibi olup karar kıldığınız alt yapıyı sayfaların altında bulunan "satın alımlar için tıkla" yazısı ile satın alabilirsiniz.',
+    },
+    {
+      key: 5,
+      header: "karahan Websites ile nasıl iletişime geçerim?",
+      text: 'sayfalarına altında bulunan "iletişime geçin" yazısına tıklayarak ilgili sayfadan bana ulaşabilirsiniz.',
+    },
+    {
+      key: 6,
+      header: "Karahan Websites sitemi kurmamda bana destek olur mu?",
+      text: "sitenizi kurarken veya güncellerken takıldığınız herhangi bir yerde bana ulaşabilirsiniz. 36 saat içerisinde size geri dönüş yapmaktayım.",
+    },
+    {
+      key: 7,
+      header: "Websiteme bakım hizmeti alabilir miyim?",
+      text: "eğer domain veya hosting ile uğraşıp yıllık veya aylık olarak para vermek istemiyor veya kafanız hiç karışmadan sitenize sahip olmak istiyorsanız bakım hizmetimizden faydalanabilirsiniz. Bunun içinde hosting, Domain adı, SSL sertifikası gibi düzenli satın alımlarımız vardır. Ücreti web sayfanızın ücretinin %12 değeri kadardır. ilk 6 ay peşin sonraki 6 ayın fiyatı 12 taksit ile alınabilir.",
+    },
+    {
+      key: 8,
+      header:
+        "Web sayfamın yedeklenmesi ve olası bir tehdit & saldırı durumund ayeniden hayata döndürülmesi mümkün mü?",
+      text: "bu normal plana dahil değildir ama isteyen müşterilerimiz için web sayfanızın aylık olarak yedeğini alıp olası bir tehdit sonunda yeniden hayata döndürme çalışmalarımız vardır ücreti aylık 30 yıllık peşin öderseniz 300tl civarındadır.",
     },
   ];
 
@@ -61,14 +92,14 @@ export default function Sss() {
               </div>
             </Accordion.Header>
 
-            <Accordion.Body className="pt-3" style={{color: "gray"}}>
+            <Accordion.Body className="pt-3" style={{ color: "gray" }}>
               {subject.text}
             </Accordion.Body>
           </Accordion.Item>
         ))}
       </Accordion>
 
-      <ContactMe/>
+      <ContactMe />
     </div>
   );
 }

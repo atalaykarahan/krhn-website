@@ -23,7 +23,7 @@ export default function Footer() {
 
         {/* Copyright*/}
         <div className="text-center p-3 footer-link">
-          © 2022 Karahan Website
+          © 2022 Karahan Websites
         </div>
         {/*  Copyright-end */}
       </footer>

@@ -6,7 +6,7 @@ export default function ContactMe() {
       {/* Ana paragraf başlangıç kısmı */}
       <h3 className="text-center m-0 ">
         <a className="krhn-contact_link" href="https://bionluk.com/atalaykrhn">
-          HERHANGİ BİR SORU VEYA SATIN ALIMLAR İÇİN TIKLA
+          İLETİŞİME GEÇ & SATIN AL
         </a>
       </h3>
     </div>
