@@ -21,7 +21,6 @@ const Navigation = () => {
           <path d="M7 15h51M7 32h43M7 49h51"></path>
         </svg>
       </Button>
-      {/* className="d-flex flex-row-reverse" */}
       <Offcanvas responsive="md" show={show} onHide={handleClose}>
         <Offcanvas.Header>
           <div className=" d-flex p-2 drawer-header justify-content-between ">
