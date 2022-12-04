@@ -10,7 +10,7 @@ export default function OthersStatik() {
       {
         topHeader: "İşletmem için değer",
         header: "İşletmeye özel",
-        text: "İşletme siteleri, belirli bir hizmeti veya ürünü satmanıza olanak tanır. Genellikle ne sattığınızı göstermek ve açıklamak için özel bölümler içerirler ve sitenizden doğrudan para kazanmanıza imkan sağlayan yerleşik özelliklere sahiptirler.",
+        text: "İşletme siteleri, belirli bir hizmeti veya ürünü satmanıza olanak tanır. Genellikle ne sattığınızı göstermek ve açıklamak için özel bölümler içerirler ve sitenizden dolaylı yoldan para kazanmanıza imkan sağlayan yerleşik özelliklere sahiptirler.",
       },
       {
         topHeader: "Güzel bir parti olucak",

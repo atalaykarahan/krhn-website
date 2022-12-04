@@ -13,7 +13,10 @@ const MainContent = () => {
             width="1280"
             height="720"
             playing={true}
-            url="https://www.youtube.com/embed/W_MfNQ9cv9M?controls=0"
+            //Eski link
+            // url="https://www.youtube.com/embed/W_MfNQ9cv9M?controls=0"
+            //Eski link end
+            url="https://www.youtube.com/embed/cqDBgqeUw4Y?controls=0"
           />
         </div>
 
@@ -21,10 +24,10 @@ const MainContent = () => {
         <Card.ImgOverlay className="row align-items-center">
           <div>
             <Card.Title className="text-center krhn-main_header-text hero_title d-flex justify-content-center ">
-              <h1>PROFESYONEL GÖRÜN. SATIŞLARINI ARTTIR.</h1>
+              <h1>PROFESYONEL GÖRÜN.</h1>
             </Card.Title>
             <Card.Text className="hero_subtitle  d-flex justify-content-center text-uppercase text-center">
-            KİŞİSEL ÇALIŞMAM SİTENİZE DAHA FAZLA ZİYARETÇİ VE GELİŞMİŞ ÖZELLİKLER SAĞLAR
+            KİŞİSEL ÇALIŞMAM DAHA FAZLA ZİYARETÇİ VE GELİŞMİŞ ÖZELLİKLER SAĞLAR.
             </Card.Text>
           </div>
         </Card.ImgOverlay>

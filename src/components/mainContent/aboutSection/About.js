@@ -15,7 +15,7 @@ export default function About() {
           <h2>Atalay</h2>
           <div>
             Bilgisayar programcısı olarak bir web sayfası yapmanın ne kadar
-            karmaşık ve zor bir durum olabileceğinin farkındayım. Bundan dolay kafanızı karıştırmadan hayalinizdeki
+            karmaşık ve zor bir durum olabileceğinin farkındayım. Bundan dolayı kafanızı karıştırmadan hayalinizdeki
             siteyi hızlıca size ulaştırmak hedefim.
           </div>
         </div>
