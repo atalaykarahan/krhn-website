@@ -1,7 +1,7 @@
 import React from "react";
 import { ProductsContext } from "../../../context/ProductsContext";
-import pH0 from "../shopSection/shopImages/bigP0.jpg";
-import pH1 from "../shopSection/shopImages/bigP1.jpg";
+import pH0 from "../carouselSection/shopImages/bigP0.jpg";
+import pH1 from "../carouselSection/shopImages/bigP1.jpg";
 
 export default function SwitchSecondary() {
   return (
