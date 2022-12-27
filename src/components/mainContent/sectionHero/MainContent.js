@@ -5,8 +5,16 @@ const MainContent = () => {
   return (
     <>
       <Card className="text-white hero-550px hero hero-mobile-250px">
+        {/* ========= Öndeki siyahlık ========= */}
+        {/* Bu siyahlığı sağlamak için player kısmına opaklık ayarı ile oynadın!! */}
+        <div
+          className="hero-media"
+          style={{ color: "black", backgroundColor: "black" }}
+        />
+        {/* ========= Öndeki siyahlık end ========= */}
         <div>
           <ReactPlayer
+            style={{ opacity: 0.7 }}
             className="hero-media"
             loop={true}
             muted={true}
@@ -27,7 +35,8 @@ const MainContent = () => {
               <h1>PROFESYONEL GÖRÜN.</h1>
             </Card.Title>
             <Card.Text className="hero_subtitle  d-flex justify-content-center text-uppercase text-center">
-            KİŞİSEL ÇALIŞMAM DAHA FAZLA ZİYARETÇİ VE GELİŞMİŞ ÖZELLİKLER SAĞLAR.
+              KİŞİSEL ÇALIŞMAM DAHA FAZLA ZİYARETÇİ VE GELİŞMİŞ ÖZELLİKLER
+              SAĞLAR.
             </Card.Text>
           </div>
         </Card.ImgOverlay>
