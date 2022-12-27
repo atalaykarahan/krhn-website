@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import bigP0 from "../shopImages/bigP0.jpg";
 import bigP1 from "../shopImages/bigP1.jpg";
-import bigP2 from "../shopImages/specialCoffePub.gif";
+import bigP2 from "../../../../gif/specialCoffePub.gif" ;
 import bigP3 from "../shopImages/bigP3.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 

@@ -1,6 +1,6 @@
 import React from "react";
 import StatikTemplate from "../template/StatikTemplate";
-
+import specialCoffePub_Gif from "../../../../gif/specialCoffePub.gif"
 export default function MenuStatik() {
   const props = {
     header: "MENÜ SİTELERİ",
@@ -11,6 +11,7 @@ export default function MenuStatik() {
         topHeader: "Aklınızda ne varsa",
         header: "Dilediğiniz Tarzda",
         text: "Cafe web sitesi, restorant web sitesi, bar web sitesi, pub web sitesi derken aslında hemen hemen hepsi aynı alt yapı ve aynı mantıkla çalışan web siteleri kullanıyor.",
+        image: specialCoffePub_Gif
       },
       {
         topHeader: "Statik mi Dinamik mi",
